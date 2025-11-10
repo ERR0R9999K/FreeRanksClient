@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeRanksClient | Choose Language</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+	<link rel="icon" type="image/png" href="assets/FreeRanksClient.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Canvas -->
+	<canvas id="particle-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    <div class="logo-text">FREERANKSCLIENT</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>FreeRanksClient</h1>
+                <p>Get exclusive ranks for Bloxd.io for FREE! Choose your language / Получите эксклюзивные ранги для Bloxd.io БЕСПЛАТНО! Выберите язык</p>
+                
+                <div class="language-selection">
+                    <div class="language-card" onclick="selectLanguage('en')">
+                        <i class="fas fa-globe-americas language-icon"></i>
+                        <div class="language-name">English</div>
+                        <div class="language-subtitle">English language version</div>
+                    </div>
+                    
+                    <div class="language-card" onclick="selectLanguage('ru')">
+                        <i class="fas fa-globe-europe language-icon"></i>
+                        <div class="language-name">Русский</div>
+                        <div class="language-subtitle">Версия на русском языке</div>
+                    </div>
+                </div>
+
+                <button id="continue-btn" class="select-button" disabled onclick="continueToHome()">
+                    <i class="fas fa-arrow-right"></i> <span id="continue-text">Select language to continue / Выберите язык чтобы продолжить</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    <div class="logo-text">FREERANKSCLIENT</div>
+                </div>
+                <p>Get exclusive ranks for Bloxd.io for FREE! / Получите эксклюзивные ранги для Bloxd.io БЕСПЛАТНО!</p>
+                <div class="social-links">
+                    <a href="https://discord.com/users/ERR0R9999K" class="social-link" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 FreeRanksClient. All rights reserved. / Все права защищены. | This is a fan project, not affiliated with the official Bloxd.io developers
+            </div>
+        </div>
+    </footer>
+    
+	<script src="assets/js/index.js"></script>
+	<script src="assets/js/particles.js"></script>
+</body>
+</html>
