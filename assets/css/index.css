@@ -21,7 +21,7 @@
     font-style: normal;
 }
 
-/* Основные стили */
+/* Basic Styles */
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ body {
     padding: 0 20px;
 }
 
-/* Шапка */
+/* Hat */
 header {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d1b4e 100%);
     padding: 20px 0;
@@ -78,7 +78,7 @@ header {
     font-weight: bold;
 }
 
-/* Главный баннер */
+/* Main banner */
 .hero {
     background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(26, 26, 26, 0.9));
     padding: 100px 0;
@@ -114,7 +114,7 @@ header {
     font-weight: bold;
 }
 
-/* Выбор языка */
+/* Language selection */
 .language-selection {
     display: flex;
     justify-content: center;
@@ -196,7 +196,7 @@ header {
     box-shadow: none;
 }
 
-/* Футер */
+/* Footer */
 footer {
     background: rgba(26, 26, 26, 0.6);
     padding: 30px 0 15px;
@@ -242,7 +242,7 @@ footer {
     width: 100%;
 }
 
-/* Адаптивность */
+/* Adaptability */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
