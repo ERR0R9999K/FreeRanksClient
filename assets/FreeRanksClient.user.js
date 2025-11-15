@@ -6,6 +6,7 @@
 // @author       @ERR0R9999K
 // @match        https://bloxd.io/*
 // @grant        GM_xmlhttpRequest
+// @copyright    2025, @ERR0R9999K (All Rights Reserved)
 // @connect      script.google.com
 // @connect      script.googleusercontent.com
 // @connect      googleusercontent.com
