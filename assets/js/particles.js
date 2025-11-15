@@ -40,8 +40,7 @@ class ParticleNetwork {
     
     animate() {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        
-        // Рисуем линии
+       
         this.ctx.strokeStyle = 'rgba(138, 43, 226, 0.4)';
         this.ctx.lineWidth = 1;
         
@@ -59,8 +58,7 @@ class ParticleNetwork {
                 }
             }
         }
-        
-        // Рисуем частицы
+       
         this.particles.forEach(p => {
             p.x += p.speedX;
             p.y += p.speedY;
@@ -78,7 +76,6 @@ class ParticleNetwork {
     }
 }
 
-// Инициализация когда DOM загружен
 document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('particle-canvas');
     if (canvas) {
