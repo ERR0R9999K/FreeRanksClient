@@ -22,7 +22,7 @@ function selectLanguage(lang) {
 
 function continueToHome() {
     if (selectedLanguage) {
-        localStorage.setItem('selectedLanguage', selectedLanguage)
+        localStorage.setItem('selectedLanguage', selectedLanguage);
         window.location.href = 'home.html';
     }
 }
@@ -34,3 +34,4 @@ window.addEventListener('DOMContentLoaded', function() {
         selectLanguage('ru');
     }
 });
+
