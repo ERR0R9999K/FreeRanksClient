@@ -1,19 +1,19 @@
-// Translations
+// Переводы
 const translations = {
     en: {
-        // Navigation
+        // Навигация
         home: "Home",
         features: "Features",
         ranks: "Ranks",
         installation: "Installation",
         
-        // Main banner
+        // Главный баннер
         heroTitle: "Why pay <span class='highlight'>$9</span> for Super Rank?",
         heroText: "Get Super Rank and other exclusive ranks <span class='highlight'>FOR FREE</span> with FreeRanksClient! Just install the extension and write in Discord.",
         downloadExtension: "Download Extension",
         howToGetRank: "How to get rank",
         
-        // Features
+        // Особенности
         whyFreeRanksClient: "Why FreeRanksClient?",
         feature1Title: "Completely Free",
         feature1Text: "All ranks are available completely free. Why pay $9 for Super Rank when you can get it for free?",
@@ -28,7 +28,7 @@ const translations = {
         feature6Title: "Auto Updates",
         feature6Text: "Automatic receipt of new ranks and bug fixes.",
         
-        // Ranks
+        // Ранги
         availableRanks: "Available Ranks",
         rank1Desc: "Gray nickname with wrench icon",
         rank2Desc: "Blue-gray nickname with admin icon",
@@ -37,7 +37,7 @@ const translations = {
         free: "FREE",
         rankNote: "Official Super Rank costs <span class='highlight'>$8.99</span> and lasts only 90 days. With FreeRanksClient you get it <span class='highlight'>FOR FREE</span> and forever!",
         
-        // Installation Instructions
+        // Инструкция
         howToGetRankTitle: "How to get rank?",
         step1Title: "Install the extension",
         step1Text: "Download and install the FreeRanksClient extension for Tampermonkey by clicking the \"Download Extension\" button.",
@@ -52,24 +52,24 @@ const translations = {
         step4Title: "Get the rank",
         step4Text: "After approval of the application, you will receive a unique rank and colored nickname that all players with the extension will see.",
         
-        // Footer
+        // Футер
         footerText: "Get exclusive ranks for Bloxd.io for free!",
         copyright: "&copy; 2023 FreeRanksClient. All rights reserved. | This is a fan project, not affiliated with the official Bloxd.io developers"
     },
     ru: {
-        // Navigation
+        // Навигация
         home: "Главная",
         features: "Особенности",
         ranks: "Ранги",
         installation: "Установка",
         
-        // Main banner
+        // Главный баннер
         heroTitle: "Почему платить <span class='highlight'>$9</span> за Super Rank?",
         heroText: "Получите Super Rank и другие эксклюзивные ранги <span class='highlight'>БЕСПЛАТНО</span> с FreeRanksClient! Просто установите расширение и напишите в Discord.",
         downloadExtension: "Скачать расширение",
         howToGetRank: "Как получить ранг",
         
-        // Features
+        // Особенности
         whyFreeRanksClient: "Почему FreeRanksClient?",
         feature1Title: "Абсолютно бесплатно",
         feature1Text: "Все ранги доступны совершенно бесплатно. Зачем платить $9 за Super Rank, если можно получить его даром?",
@@ -84,7 +84,7 @@ const translations = {
         feature6Title: "Автообновления",
         feature6Text: "Автоматическое получение новых рангов и исправлений ошибок.",
         
-        // Ranks
+        // Ранги
         availableRanks: "Доступные ранги",
         rank1Desc: "Серый никнейм с иконкой гаечного ключа",
         rank2Desc: "Сине-серый никнейм с иконкой администратора",
@@ -93,7 +93,7 @@ const translations = {
         free: "БЕСПЛАТНО",
         rankNote: "Официальный Super Rank стоит <span class='highlight'>$8.99</span> и действует всего 90 дней. С FreeRanksClient вы получаете его <span class='highlight'>БЕСПЛАТНО</span> и навсегда!",
         
-        // Installation Instructions
+        // Инструкция
         howToGetRankTitle: "Как получить ранг?",
         step1Title: "Установите расширение",
         step1Text: "Скачайте и установите расширение FreeRanksClient для Tampermonkey, нажав кнопку \"Скачать расширение\".",
@@ -108,16 +108,18 @@ const translations = {
         step4Title: "Получите ранг",
         step4Text: "После одобрения заявки вы получите уникальный ранг и цветной никнейм, который будут видеть все игроки с расширением.",
         
-        // Footer
+        // Футер
         footerText: "Получите эксклюзивные ранги для Bloxd.io бесплатно!",
         copyright: "&copy; 2023 FreeRanksClient. Все права защищены. | Это фанатский проект, не связанный с официальными разработчиками Bloxd.io"
     }
 };
 
+// Проверяем, выбран ли язык
 window.addEventListener('DOMContentLoaded', function() {
     const selectedLanguage = localStorage.getItem('selectedLanguage') || 'ru';
     applyLanguage(selectedLanguage);
     
+    // Добавляем плавную прокрутку для якорных ссылок
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -131,6 +133,7 @@ window.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Прокрутка к верху страницы при нажатии на "Главная"
     document.getElementById('home-link').addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({
@@ -141,6 +144,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 function applyLanguage(lang) {
+    // Обновляем все элементы с data-translate
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         if (translations[lang] && translations[lang][key]) {
@@ -152,8 +156,10 @@ function applyLanguage(lang) {
         }
     });
     
+    // Обновляем отображение текущего языка
     document.getElementById('lang-display').textContent = lang.toUpperCase();
     
+    // Сохраняем выбранный язык
     localStorage.setItem('selectedLanguage', lang);
 }
 
