@@ -140,7 +140,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function applyLanguage(lang) 
+function applyLanguage(lang) {
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         if (translations[lang] && translations[lang][key]) {
