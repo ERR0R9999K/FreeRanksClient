@@ -91,47 +91,175 @@
         </div>
     </section>
 
-    <!-- Ranks -->
-    <section class="ranks" id="ranks">
-        <div class="container">
-            <h2 class="section-title" data-translate="availableRanks">Доступные ранги</h2>
-            <div class="ranks-container">
-                <div class="rank-card">
-                    <i class="fas fa-wrench rank-icon" style="color: #a4a4a4;"></i>
-                    <div class="rank-name" style="color: #a4a4a4;">Developer</div>
-                    <div class="rank-color" style="background: #a4a4a4;"></div>
-                    <p class="rank-description" data-translate="rank1Desc">Серый никнейм с иконкой гаечного ключа</p>
-                    <div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
-                </div>
-                <div class="rank-card">
-                    <i class="fas fa-person-military-pointing rank-icon" style="color: #556c7d;"></i>
-                    <div class="rank-name" style="color: #556c7d;">Admin</div>
-                    <div class="rank-color" style="background: #556c7d;"></div>
-                    <p class="rank-description" data-translate="rank2Desc">Сине-серый никнейм с иконкой администратора</p>
-                    <div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
-                </div>
-                <div class="rank-card">
-                    <i class="fab fa-youtube rank-icon" style="color: #ff0000;"></i>
-                    <div class="rank-name" style="color: #ff0000;">YouTuber</div>
-                    <div class="rank-color" style="background: #ff0000;"></div>
-                    <p class="rank-description" data-translate="rank3Desc">Красный никнейм с иконкой YouTube</p>
-                    <div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
-                </div>
-                <div class="rank-card">
-                    <i class="fas fa-bolt rank-icon" style="color: #ffcc00;"></i>
-                    <div class="rank-name" style="color: #ffcc00;">Super</div>
-                    <div class="rank-color" style="background: #ffcc00;"></div>
-                    <p class="rank-description" data-translate="rank4Desc">Золотой никнейм с иконкой молнии</p>
-                    <div class="rank-price price-paid">$8.99</div>
-                    <div class="rank-price price-free" style="margin-top: 5px;" data-translate="free">БЕСПЛАТНО</div>
-                </div>
-            </div>
-            <p style="text-align: center; margin-top: 30px; color: #d0d0d0; font-size: 1.1rem;">
-                <i class="fas fa-exclamation-circle" style="color: #ffcc00;"></i> 
-                <span data-translate="rankNote">Официальный Super Rank стоит <span class="highlight">$8.99</span> и действует всего 90 дней. С FreeRanksClient вы получаете его <span class="highlight">БЕСПЛАТНО</span> и навсегда!</span>
-            </p>
-        </div>
-    </section>
+	<!-- Ranks -->
+	<section class="ranks" id="ranks">
+		<div class="container">
+			<h2 class="section-title" data-translate="availableRanks">Доступные ранги</h2>
+			<div class="ranks-container">
+				<!-- FreeRanksClient Rank -->
+				<div class="rank-card">
+					<div class="rank-icon-container" style="background: #cc66ff;">
+						<i class="fas fa-zap rank-icon" style="color: #ba55d3;"></i>
+					</div>
+					<div class="rank-name" style="color: #cc66ff;">Free Ranks Client</div>
+					<div class="rank-color" style="background: #cc66ff;"></div>
+					<p class="rank-description" data-translate="rankClientDesc">Эксклюзивный ранг клиента с фиолетовым цветом</p>
+					
+					<div class="rank-divider"></div>
+					
+					<div class="rank-acquisition" style="color: #cc66ff; border-left-color: #cc66ff;" data-translate="rankAcquisitionClient">
+						💜 Автоматически выдается при установке клиента
+					</div>
+					<div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
+				</div>
+				
+				<!-- God Rank -->
+				<div class="rank-card">
+					<div class="rank-icon-container" style="background: #ffff00;">
+						<i class="fas fa-crown rank-icon" style="color: #ffffff;"></i>
+					</div>
+					<div class="rank-name" style="color: #ffff00;">GOD</div>
+					<div class="rank-color" style="background: #ffff00;"></div>
+					<p class="rank-description" data-translate="rankGodDesc">Золотой никнейм с иконкой короны</p>
+					
+					<div class="rank-divider"></div>
+					
+					<div class="rank-acquisition" style="color: #ffff00; border-left-color: #ffff00;" data-translate="rankAcquisitionGod">
+						👑 Выдается за особые заслуги перед проектом
+					</div>
+					<div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
+				</div>
+				
+				<!-- BedWars Rank -->
+				<div class="rank-card">
+					<div class="rank-icon-container" style="background: #e10000;">
+						<i class="fas fa-cube rank-icon" style="color: #ffffff;"></i>
+					</div>
+					<div class="rank-name" style="color: #e10000;">BedWars</div>
+					<div class="rank-color" style="background: #e10000;"></div>
+					<p class="rank-description" data-translate="rankBedwarsDesc">Красный никнейм с иконкой куба</p>
+					
+					<div class="rank-divider"></div>
+					
+					<div class="rank-acquisition" style="color: #e10000; border-left-color: #e10000;" data-translate="rankAcquisitionBedwars">
+						🎯 Победитель в турнире по BedWars
+					</div>
+					<div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
+				</div>
+				
+				<!-- Owner Rank -->
+				<div class="rank-card">
+					<div class="rank-icon-container" style="background: #ffb914;">
+						<i class="fas fa-crown rank-icon" style="color: #ffffff;"></i>
+					</div>
+					<div class="rank-name" style="color: #ffb914;">Owner</div>
+					<div class="rank-color" style="background: #ffb914;"></div>
+					<p class="rank-description" data-translate="rankOwnerDesc">Оранжевый никнейм с золотой короной</p>
+					
+					<div class="rank-divider"></div>
+					
+					<div class="rank-acquisition" style="color: #ffb914; border-left-color: #ffb914;" data-translate="rankAcquisitionOwner">
+						⭐ Владельцы серверов и создатели контента
+					</div>
+					<div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
+				</div>
+				
+				<!-- Developer Rank -->
+				<div class="rank-card">
+					<div class="rank-icon-container" style="background: #a4a4a4;">
+						<i class="fas fa-wrench rank-icon" style="color: #ffffff;"></i>
+					</div>
+					<div class="rank-name" style="color: #a4a4a4;">Developer</div>
+					<div class="rank-color" style="background: #a4a4a4;"></div>
+					<p class="rank-description" data-translate="rank1Desc">Серый никнейм с иконкой гаечного ключа</p>
+					
+					<div class="rank-divider"></div>
+					
+					<div class="rank-acquisition" style="color: #a4a4a4; border-left-color: #a4a4a4;" data-translate="rankAcquisitionDeveloper">
+						🔧 Разработчики и тестировщики клиента
+					</div>
+					<div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
+				</div>
+				
+				<!-- Admin Rank -->
+				<div class="rank-card">
+					<div class="rank-icon-container" style="background: #556c7d;">
+						<i class="fas fa-person-military-pointing rank-icon" style="color: #cef3ff;"></i>
+					</div>
+					<div class="rank-name" style="color: #556c7d;">Admin</div>
+					<div class="rank-color" style="background: #556c7d;"></div>
+					<p class="rank-description" data-translate="rank2Desc">Сине-серый никнейм с иконкой администратора</p>
+					
+					<div class="rank-divider"></div>
+					
+					<div class="rank-acquisition" style="color: #556c7d; border-left-color: #556c7d;" data-translate="rankAcquisitionAdmin">
+						🔒 Администраторы сообщества и модераторы
+					</div>
+					<div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
+				</div>
+				
+				<!-- YouTuber Rank -->
+				<div class="rank-card">
+					<div class="rank-icon-container" style="background: #ff0000;">
+						<i class="fab fa-youtube rank-icon" style="color: #ffffff;"></i>
+					</div>
+					<div class="rank-name" style="color: #ff0000;">YouTuber</div>
+					<div class="rank-color" style="background: #ff0000;"></div>
+					<p class="rank-description" data-translate="rank3Desc">Красный никнейм с иконкой YouTube</p>
+					
+					<div class="rank-divider"></div>
+					
+					<div class="rank-acquisition" style="color: #ff0000; border-left-color: #ff0000;" data-translate="rankAcquisitionYoutuber">
+						📹 Стримеры и создатели YouTube контента
+					</div>
+					<div class="rank-price price-free" data-translate="free">БЕСПЛАТНО</div>
+				</div>
+				
+				<!-- Super Rank -->
+				<div class="rank-card">
+					<div class="rank-icon-container" style="background: #ffcc00;">
+						<i class="fas fa-bolt rank-icon" style="color: #ffffff;"></i>
+					</div>
+					<div class="rank-name" style="color: #ffcc00;">Super</div>
+					<div class="rank-color" style="background: #ffcc00;"></div>
+					<p class="rank-description" data-translate="rank4Desc">Золотой никнейм с иконкой молнии</p>
+					
+					<div class="rank-divider"></div>
+					
+					<div class="rank-acquisition" style="color: #ffcc00; border-left-color: #ffcc00;" data-translate="rankAcquisitionSuper">
+						⚡ Доступен всем через заявку в Discord
+					</div>
+					<div class="rank-price price-paid">$8.99</div>
+					<div class="rank-price price-free" style="margin-top: 5px;" data-translate="free">БЕСПЛАТНО</div>
+				</div>
+			</div>
+
+			<!-- Rank Notice -->
+			<div class="rank-notice">
+				<div class="rank-notice-content">
+					<i class="fas fa-bullhorn rank-notice-icon"></i>
+					<div class="rank-notice-text" data-translate="rankNoticeText">
+						Все ранги <span class="rank-notice-highlight" data-translate="rankNoticeHighlight">от Admin до God</span> доступны через участие в ивентах, раздачах и конкурсах!
+					</div>
+				</div>
+				<div class="rank-notice-channels">
+					<a href="https://www.youtube.com/@err0r9999k" class="rank-notice-channel youtube" target="_blank">
+						<i class="fab fa-youtube"></i>
+						<span data-translate="rankNoticeYouTube">Следите за обновлениями на YouTube</span>
+					</a>
+					<a href="https://discord.com/invite/m39TZZJm" class="rank-notice-channel discord" target="_blank">
+						<i class="fab fa-discord"></i>
+						<span data-translate="rankNoticeDiscord">Присоединяйтесь к Discord сообществу</span>
+					</a>
+				</div>
+			</div>
+
+			<p style="text-align: center; margin-top: 30px; color: #d0d0d0; font-size: 1.1rem;">
+				<i class="fas fa-exclamation-circle" style="color: #ffcc00;"></i> 
+				<span data-translate="rankNote">Официальный Super Rank стоит <span class="highlight">$8.99</span> и действует всего 90 дней. С FreeRanksClient вы получаете его <span class="highlight">БЕСПЛАТНО</span> и навсегда!</span>
+			</p>
+		</div>
+	</section>
 
     <!-- Installation Instructions -->
     <section class="instructions" id="instructions">
