@@ -34,8 +34,28 @@ const translations = {
         rank2Desc: "Blue-gray nickname with admin icon",
         rank3Desc: "Red nickname with YouTube icon",
         rank4Desc: "Golden nickname with lightning icon",
+        rankClientDesc: "Exclusive client rank with purple color",
+        rankGodDesc: "Golden nickname with crown icon",
+        rankBedwarsDesc: "Red nickname with cube icon",
+        rankOwnerDesc: "Orange nickname with golden crown",
         free: "FREE",
         rankNote: "Official Super Rank costs <span class='highlight'>$8.99</span> and lasts only 90 days. With FreeRanksClient you get it <span class='highlight'>FOR FREE</span> and forever!",
+        
+        // Rank Acquisition Methods
+        rankAcquisitionClient: "💜 Automatically granted upon client installation",
+        rankAcquisitionGod: "👑 Awarded for special contributions to the project",
+        rankAcquisitionBedwars: "🎯 BedWars tournament winner",
+        rankAcquisitionOwner: "⭐ Server owners and content creators",
+        rankAcquisitionDeveloper: "🔧 Client developers and testers",
+        rankAcquisitionAdmin: "🔒 Community administrators and moderators",
+        rankAcquisitionYoutuber: "📹 Streamers and YouTube content creators",
+        rankAcquisitionSuper: "⚡ Available to everyone via Discord application",
+        
+        // Rank Notice
+        rankNoticeText: "All ranks <span class='rank-notice-highlight'>from Admin to God</span> are available through events, giveaways, and contests!",
+        rankNoticeHighlight: "from Admin to God",
+        rankNoticeYouTube: "Follow updates on YouTube",
+        rankNoticeDiscord: "Join our Discord community",
         
         // Installation Instructions
         howToGetRankTitle: "How to get rank?",
@@ -90,8 +110,28 @@ const translations = {
         rank2Desc: "Сине-серый никнейм с иконкой администратора",
         rank3Desc: "Красный никнейм с иконкой YouTube",
         rank4Desc: "Золотой никнейм с иконкой молнии",
+        rankClientDesc: "Эксклюзивный ранг клиента с фиолетовым цветом",
+        rankGodDesc: "Золотой никнейм с иконкой короны",
+        rankBedwarsDesc: "Красный никнейм с иконкой куба",
+        rankOwnerDesc: "Оранжевый никнейм с золотой короной",
         free: "БЕСПЛАТНО",
         rankNote: "Официальный Super Rank стоит <span class='highlight'>$8.99</span> и действует всего 90 дней. С FreeRanksClient вы получаете его <span class='highlight'>БЕСПЛАТНО</span> и навсегда!",
+        
+        // Rank Acquisition Methods
+        rankAcquisitionClient: "💜 Автоматически выдается при установке клиента",
+        rankAcquisitionGod: "👑 Выдается за особые заслуги перед проектом",
+        rankAcquisitionBedwars: "🎯 Победитель в турнире по BedWars",
+        rankAcquisitionOwner: "⭐ Владельцы серверов и создатели контента",
+        rankAcquisitionDeveloper: "🔧 Разработчики и тестировщики клиента",
+        rankAcquisitionAdmin: "🔒 Администраторы сообщества и модераторы",
+        rankAcquisitionYoutuber: "📹 Стримеры и создатели YouTube контента",
+        rankAcquisitionSuper: "⚡ Доступен всем через заявку в Discord",
+        
+        // Rank Notice
+        rankNoticeText: "Все ранги <span class='rank-notice-highlight'>от Admin до God</span> доступны через участие в ивентах, раздачах и конкурсах!",
+        rankNoticeHighlight: "от Admin до God",
+        rankNoticeYouTube: "Следите за обновлениями на YouTube",
+        rankNoticeDiscord: "Присоединяйтесь к Discord сообществу",
         
         // Installation Instructions
         howToGetRankTitle: "Как получить ранг?",
