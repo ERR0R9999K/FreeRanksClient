@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeRanksClient | Development Log</title>
+    <link rel="stylesheet" href="assets/css/devlog.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="icon" type="image/png" href="assets/FreeRanksClient.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Hat -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    <div class="logo-text">FREERANKSCLIENT</div>
+                </div>
+				<nav>
+					<ul>
+						<li><a href="home.html"><i class="fas fa-home"></i> <span data-translate="home">Главная</span></a></li>
+						<li><a href="home.html#features"><i class="fas fa-star"></i> <span data-translate="features">Особенности</span></a></li>
+						<li><a href="home.html#ranks"><i class="fas fa-crown"></i> <span data-translate="ranks">Ранги</span></a></li>
+						<li><a href="home.html#instructions"><i class="fas fa-download"></i> <span data-translate="installation">Установка</span></a></li>
+					</ul>
+				</nav>
+                <button class="language-switcher" onclick="switchLanguage()">
+                    <i class="fas fa-globe"></i> <span id="lang-display">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- DevLog Content -->
+    <section class="devlog">
+        <div class="devlog-container">
+            <a href="home.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> <span data-translate="backToHome">Назад на главную</span>
+            </a>
+            
+            <div class="devlog-header">
+                <h1 class="devlog-title" data-translate="devlogTitle">Журнал обновлений</h1>
+                <p class="devlog-subtitle" data-translate="devlogSubtitle">Последние обновления и улучшения FreeRanksClient</p>
+            </div>
+
+            <!-- Update Entry 1 -->
+            <div class="update-entry">
+                <div class="update-header">
+                    <h2 class="update-title" data-translate="update1Title">Версия 1.5.0 / Выпуск клиента!</h2>
+                    <div class="update-date">10.09.2025</div>
+                </div>
+                <div class="update-content">
+                    <div class="update-changes">
+                        <ul class="changes-list">
+                            <li data-translate="update1Change1">Отображение в главном меню.</li>
+                            <li data-translate="update1Change2">Отображение в чате.</li>
+                            <li data-translate="update1Change3">Отображение в вечеринке.</li>
+                            <li data-translate="update1Change4">Отображение в списке друзей.</li>
+                            <li data-translate="update1Change5">И в других малоиспользуемых местах...</li>
+                            <li data-translate="update1Change6">Хорошая база данных.</li>
+                            <li data-translate="update1Change7">Простое получение ранга!</li>
+                        </ul>
+                    </div>
+                    <div class="update-screenshot">
+                        <div class="screenshot-frame">
+                            <img src="assets/images/devlog/update1.png" alt="Update Image" class="screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Update Entry 2 -->
+            <div class="update-entry">
+                <div class="update-header">
+                    <h2 class="update-title" data-translate="update2Title">Версия 2.7.1 / Глобальное обновление клиента!</h2>
+                    <div class="update-date">20.10.2025</div>
+                </div>
+                <div class="update-content">
+                    <div class="update-changes">
+                        <ul class="changes-list">
+                            <li data-translate="update2Change1">Исправлены ошибки предыдущей версии.</li>
+                            <li data-translate="update2Change2">Исправлено форматирование текста в проблемных местах.</li>
+                            <li data-translate="update2Change3">Глобально переписан код!</li>
+                            <li data-translate="update2Change4">Обновлен блокировщик рекламы.</li>
+                            <li data-translate="update2Change5">Добавлен более продвинутый функционал!</li>
+                        </ul>
+                    </div>
+                    <div class="update-screenshot">
+                        <div class="screenshot-frame">
+                            <img src="assets/images/devlog/update2.png" alt="Update Image" class="screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Update Entry 3 -->
+            <div class="update-entry">
+                <div class="update-header">
+                    <h2 class="update-title" data-translate="update3Title">Версия 3.1.2 / Глобальное обновление клиента!</h2>
+                    <div class="update-date">20.10.2025</div>
+                </div>
+                <div class="update-content">
+                    <div class="update-changes">
+                        <ul class="changes-list">
+                            <li data-translate="update3Change1">Исправлены ошибки предыдущей версии.</li>
+                            <li data-translate="update3Change2">Добавлены дополнительные стили игры.</li>
+                            <li data-translate="update3Change3">Усовершенствован блокировщик рекламы.</li>
+                            <li data-translate="update3Change4">Обновлена визуализация суперранга.</li>
+                            <li data-translate="update3Change5">Отображение рангов и цветных никнеймов в тегах имен!</li>
+                        </ul>
+                    </div>
+                    <div class="update-screenshot">
+                        <div class="screenshot-frame">
+                            <img src="assets/images/devlog/update3.png" alt="Update Image" class="screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    <div class="logo-text">FREERANKSCLIENT</div>
+                </div>
+                <p data-translate="footerText">Получите эксклюзивные ранги для Bloxd.io бесплатно!</p>
+                <div class="social-links">
+                    <a href="https://discord.com/users/ERR0R9999K" class="social-link" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@err0r9999k" class="social-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/ERR0R9999K" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright" data-translate="copyright">
+                &copy; 2025 FreeRanksClient. Все права защищены. | Это фанатский проект, не связанный с официальными разработчиками Bloxd.io
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/particles.js"></script>
+</body>
+</html>

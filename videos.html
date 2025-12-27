@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeRanksClient | YouTube Videos</title>
+    <link rel="stylesheet" href="assets/css/videos.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="icon" type="image/png" href="assets/FreeRanksClient.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    <div class="logo-text">FREERANKSCLIENT</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="home.html"><i class="fas fa-home"></i> <span data-translate="home">Главная</span></a></li>
+                        <li><a href="home.html#features"><i class="fas fa-star"></i> <span data-translate="features">Особенности</span></a></li>
+                        <li><a href="home.html#ranks"><i class="fas fa-crown"></i> <span data-translate="ranks">Ранги</span></a></li>
+                        <li><a href="home.html#instructions"><i class="fas fa-download"></i> <span data-translate="installation">Установка</span></a></li>
+                    </ul>
+                </nav>
+                <button class="language-switcher" onclick="switchLanguage()">
+                    <i class="fas fa-globe"></i> <span id="lang-display">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Videos Content -->
+    <section class="videos-page">
+        <div class="videos-container">
+            <a href="home.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> <span data-translate="backToHome">Назад на главную</span>
+            </a>
+            
+            <div class="videos-header">
+                <h1 class="videos-title" data-translate="videosTitle">Видео с YouTube</h1>
+                <p class="videos-subtitle" data-translate="videosSubtitle">Последние видео с нашего YouTube канала</p>
+                <a href="https://www.youtube.com/@err0r9999k" class="youtube-channel-link" target="_blank">
+                    <i class="fab fa-youtube"></i> <span data-translate="visitYouTubeChannel">Посетить наш YouTube канал</span>
+                </a>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/lx1EmC0nr_o"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title">How do I install FreeRanksClient? #FFRRCC</h3>
+                        <p class="video-description">/* FREERANKSCLIENT© */</p>
+                        <div class="video-meta">
+                            <span class="video-date"><i class="far fa-calendar"></i> 20.11.2025</span>
+                            <span class="video-duration"><i class="far fa-clock"></i> 3:11</span>
+                        </div>
+                    </div>
+                </div>
+				
+            </div>
+
+            <!-- YouTube Channel CTA -->
+            <div class="channel-cta">
+                <div class="cta-content">
+                    <i class="fab fa-youtube cta-icon"></i>
+                    <h2 data-translate="wantMoreContent">Хотите больше контента?</h2>
+                    <p data-translate="subscribeYouTube">Подпишитесь на наш YouTube канал для получения последних обновлений, руководств и демонстраций!</p>
+                    <a href="https://www.youtube.com/@err0r9999k" class="cta-button" target="_blank">
+                        <i class="fab fa-youtube"></i> <span data-translate="subscribeButton">Подписаться на YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    <div class="logo-text">FREERANKSCLIENT</div>
+                </div>
+                <p data-translate="footerText">Получите эксклюзивные ранги для Bloxd.io бесплатно!</p>
+                <div class="social-links">
+                    <a href="https://discord.com/users/ERR0R9999K" class="social-link" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@err0r9999k" class="social-link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/ERR0R9999K" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright" data-translate="copyright">
+                &copy; 2025 FreeRanksClient. Все права защищены. | Это фанатский проект, не связанный с официальными разработчиками Bloxd.io
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/particles.js"></script>
+</body>
+</html>
