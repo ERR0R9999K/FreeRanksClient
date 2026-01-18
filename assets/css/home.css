@@ -308,6 +308,12 @@ nav a:hover {
     z-index: 1;
 }
 
+.rank-svg-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
 .rank-name {
     font-size: 1.5rem;
     font-weight: bold;
@@ -364,6 +370,11 @@ nav a:hover {
 
 .price-paid {
     background: linear-gradient(135deg, #ff4444, #cc0000);
+    color: white;
+}
+
+.price-verified {
+    background: linear-gradient(135deg, #1360c8, #00a8ff);
     color: white;
 }
 
@@ -610,6 +621,11 @@ footer {
     
     .rank-icon {
         font-size: 2rem;
+    }
+    
+    .rank-svg-icon {
+        width: 50px;
+        height: 50px;
     }
     
     .rank-acquisition {
