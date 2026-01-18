@@ -43,11 +43,14 @@ const translations = {
         rankDemonicDesc: "Black skull and bloody fire.  The color is like an eternal conflagration",
         rankHotDesc: "It's as spicy as a chili pepper. It burns with endless fire",
         rankOwnerDesc: "Orange nickname with golden crown",
+        rankVerifiedDesc: "Verified players and active community members",
         free: "FREE",
+        freeVerified: "EXCLUSIVE",
         rankNote: "Official Super Rank costs <span class='highlight'>$8.99</span> and lasts only 90 days. With FreeRanksClient you get it <span class='highlight'>FOR FREE</span> and forever!",
         
         // Rank Acquisition Methods
         rankAcquisitionClient: "💜 For the client's owner only",
+        rankAcquisitionVerified: "✅ Verified players and active participants",
         rankAcquisitionHot: "🔥 A hot rank in the truest sense of the word",
         rankAcquisitionDemonic: "💀Demonic rank with a skull",
         rankAcquisitionLegend: "❤️‍🔥 The  rank of a true legend",
@@ -207,11 +210,14 @@ const translations = {
         rankDemonicDesc: "Чёрный череп и кровавый огонь.  Цвет подобен вечному пожару",
         rankHotDesc: "Он острый, как перец чили. Он горит бесконечным огнем",
         rankOwnerDesc: "Оранжевый никнейм с золотой короной",
+        rankVerifiedDesc: "Подтверждённые игроки и активные участники сообщества",
         free: "БЕСПЛАТНО",
+        freeVerified: "ЭКСКЛЮЗИВНО",
         rankNote: "Официальный Super Rank стоит <span class='highlight'>$8.99</span> и действует всего 90 дней. С FreeRanksClient вы получаете его <span class='highlight'>БЕСПЛАТНО</span> и навсегда!",
         
         // Rank Acquisition Methods
         rankAcquisitionClient: "💜 Только для владельца клиента",
+        rankAcquisitionVerified: "✅ Подтверждённые игроки и активные участники",
         rankAcquisitionHot: "🔥 Горячий ранг в самом прямом смысле этого слова",
         rankAcquisitionDemonic: "💀 Демонический ранг с черепом",
         rankAcquisitionLegend: "❤️‍🔥 Звание настоящей легенды",
