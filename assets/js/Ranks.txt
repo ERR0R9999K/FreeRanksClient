@@ -1,0 +1,203 @@
+// ==UserScript==
+// @name         Free Bloxd Ranks!
+// @namespace    http://tampermonkey.net/
+// @version      1.1
+// @description  Fire
+// @author       @ERR0R9999K
+// @match        https://*.bloxd.io/*
+// @icon         https://err0r9999k.github.io/FreeRanksClient/assets/images/NoaLogo.png
+// @run-at       document-end
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    function findNoa() {
+        const deepFindSafe = (obj, test, seen = new Set()) => {
+            if (!obj || typeof obj !== 'object' || seen.has(obj)) return null;
+            seen.add(obj);
+            try {
+                if (test(obj)) return obj;
+                for (const val of Object.values(obj)) {
+                    const res = deepFindSafe(val, test, seen);
+                    if (res) return res;
+                }
+            } catch (e) {}
+        };
+
+        let noa = null;
+        const getNoa = () => {
+            if (noa) return noa;
+            const element = document.querySelector('div.InventoryWrapper');
+            if (!element) return null;
+            const fiberKey = Object.keys(element).find(k => k.startsWith('__reactFiber$'));
+            if (!fiberKey) return null;
+            const fiber = element[fiberKey];
+            const test = (obj) => obj && obj.entities && typeof obj.entities.getState === 'function' && obj.camera;
+            noa = deepFindSafe(fiber.memoizedProps, test) || deepFindSafe(fiber.memoizedState, test);
+            window._noa = noa;
+            return noa;
+        };
+
+        const result = getNoa();
+
+        if (result) {
+            console.log("%c[NoaFinder] %cNoa found", "color: #007bff; font-weight: bold;", "color: #ffffff; font-weight: bold;");
+            console.dir(result, { depth: 4 });
+
+            const entityList = Object.values(result)[30]
+            const player = entityList[1][1];
+
+            console.log("=====================================================\n")
+
+            const tag = result.entities.getState(1, "entityName");
+
+            if (tag) {
+                tag.nameColour = "aqua";
+                tag.nameColourSub.listener(tag.nameColour);
+
+                tag.nameTagInfo.backgroundColor = "#eb4034";
+                tag.nameTagInfo.content = [{icon: "wrench", mainRGB: "#a4a4a4", chatTag: [], nameTag: {iconShadowRGB: "#ff0000"}}, {str: 'Custom Name!', style: { color: "#ff0000"}}]
+                tag.nameTagInfoSub.listener(tag.nameTagInfo); // Apply
+
+
+            }
+            console.log("Tag: ",tag);
+            console.log("player 1: ",player);
+
+            console.log("=====================================================")
+        }
+
+        return result;
+
+    }
+
+    // Find NoaCanvas button
+    const NoaButton = document.createElement('button');
+    NoaButton.textContent = 'Add Test Raks';
+    NoaButton.id = 'RankTest-button';
+    document.body.appendChild(NoaButton);
+
+    const style = document.createElement('style');
+    style.textContent = `
+        #RankTest-button {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 99999;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        #RankTest-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+        }
+    `;
+    document.head.appendChild(style);
+
+    NoaButton.addEventListener('click', findNoa);
+})();
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// HI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
