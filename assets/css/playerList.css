@@ -225,6 +225,40 @@ nav a {
 .ProfilePicture .ProfilePictureComponent.ProfilePictureComponentHead { z-index: 4; }
 .ProfilePicture .ProfilePictureComponent.ProfilePictureComponentHat { z-index: 5; }
 
+/* Share Profile Button */
+.share-profile-btn {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.share-profile-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(138, 43, 226, 0.5);
+}
+
+.share-profile-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustments for modal buttons */
+@media (max-width: 768px) {
+    .share-profile-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+}
+
 /* Player Info */
 .player-info {
     flex: 1;
