@@ -1,3 +1,9 @@
+:root {
+    --space-bg: url('https://i.postimg.cc/NMG91FWH/space-BG-loco.jpg');
+    --client-bg: url('https://err0r9999k.github.io/FreeRanksClient/assets/images/skybox.png');
+    --client-logo: url('https://err0r9999k.github.io/FreeRanksClient/assets/images/FreeRanksClient.png');
+}
+
 /* Styles For Bloxd Io! */
 body {
     background: rgba(255, 255, 255, 0.2) !important;
