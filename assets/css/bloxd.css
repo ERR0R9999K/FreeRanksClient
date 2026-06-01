@@ -126,7 +126,7 @@ body {
 .FRC.InfoText.Normal.GitHub { color: #fff !important; }
 .FRC.InfoText.Normal.Discord { color: #5d6af1 !important; }
 .FRC.InfoText.Normal.SpaceBG {
-    background: url('${IMAGE_LIBRARY.Space}') !important;
+    background: url(var(--space-bg)) !important;
     background-size: cover !important;
     border-radius: 10px !important;
     padding: 0.3em !important;
@@ -171,7 +171,7 @@ body {
 
 /* ============================================================ Background ============================================================ */
 .HomePageInner, .LoadingOverlay {
-    background-image: url('${ClientBackground}') !important;
+    background-image: url(var(--client-bg)) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
@@ -186,7 +186,7 @@ body {
 }
 
 .LogoLoaderLoadingBar {
-    background-image: url('${FreeRanksClientLogo}') !important;
+    background-image: url(var(--client-logo)) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
