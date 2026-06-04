@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreeRanksClient</title>
+    <title>FreeRanksClient - Player List</title>
     <link rel="stylesheet" href="assets/css/playerList.css">
     <link rel="icon" type="image/png" href="assets/images/FreeRanksClient.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,19 +19,17 @@
             <div class="header-content">
                 <div class="logo">
                     <i class="fas fa-bolt logo-icon"></i>
-                    <div class="logo-text">FREERANKSCLIENT PlayerList</div>
+                    <div class="logo-text"> FREERANKSCLIENT PlayerList</div>
                 </div>
-				<nav>
-					<ul>
-						<li><a href="home.html"><i class="fas fa-home"></i> <span data-translate="home">Home</span></a></li>
-						<li><a href="home.html#features"><i class="fas fa-star"></i> <span data-translate="features">Features</span></a></li>
-						<li><a href="home.html#ranks"><i class="fas fa-crown"></i> <span data-translate="ranks">Ranks</span></a></li>
-						<li><a href="home.html#instructions"><i class="fas fa-download"></i> <span data-translate="installation">Installation</span></a></li>
-					</ul>
-				</nav>
-                <button class="language-switcher" onclick="switchLanguage()">
-                    <i class="fas fa-globe"></i> <span id="lang-display">EN</span>
-                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="index.html#features"><i class="fas fa-star"></i> Features</a></li>
+                        <li><a href="index.html#ranks"><i class="fas fa-crown"></i> Ranks</a></li>
+                        <li><a href="index.html#instructions"><i class="fas fa-download"></i> Installation</a></li>
+                        <li><a href="index.html#releases"><i class="fas fa-code-branch"></i> Releases</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -40,40 +38,39 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1><span class="highlight" data-translate="playerListTitle">Список игроков</span></h1>
-                <p data-translate="playerListDesc">Все игроки, получившие ранги через FreeRanksClient</p>
+                <h1><i class="fas fa-users"></i> <span class="highlight">Player List</span></h1>
+                <p><i class="fas fa-database"></i> All players who received ranks through FreeRanksClient</p>
             </div>
         </div>
     </section>
 
-	<!-- Players Grid -->
-	<section class="features">
-		<div class="container">
-			<a href="home.html" class="back-button">
-				<i class="fas fa-arrow-left"></i> <span data-translate="backToHome">Back to Home</span>
-			</a>
-			<div class="total-players">
-				<span id="total-players-loading">
-					<i class="fas fa-users"></i> <span data-translate="totalPlayers">Всего игроков:</span> <i class="fas fa-spinner fa-spin"></i>
-				</span>
-				<span id="total-players" style="display: none;">
-					<i class="fas fa-users"></i> <span data-translate="totalPlayers">Всего игроков:</span> <span id="player-count">0</span>
-				</span>
-			</div>
-			<div class="player-grid" id="player-grid">
-				<!-- Players will be loaded dynamically via playerList.js -->
-				<div style="text-align: center; padding: 50px; grid-column: 1/-1;">
-					<i class="fas fa-spinner fa-spin fa-3x" style="color: #8a2be2;"></i>
-					<p style="margin-top: 20px;" data-translate="loadingPlayers">Загрузка списка игроков...</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Players Grid -->
+    <section class="features">
+        <div class="container">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <div class="total-players">
+                <span id="total-players-loading">
+                    <i class="fas fa-users"></i> Total players: <i class="fas fa-spinner fa-spin"></i>
+                </span>
+                <span id="total-players" style="display: none;">
+                    <i class="fas fa-users"></i> Total players: <span id="player-count">0</span>
+                </span>
+            </div>
+            <div class="player-grid" id="player-grid">
+                <div style="text-align: center; padding: 50px; grid-column: 1/-1;">
+                    <i class="fas fa-spinner fa-spin fa-3x" style="color: #8a2be2;"></i>
+                    <p style="margin-top: 20px;"><i class="fas fa-hourglass-half"></i> Loading player list...</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Modal Window -->
     <div id="player-modal" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closePlayerModal()">&times;</span>
+            <span class="modal-close" onclick="closePlayerModal()"><i class="fas fa-times"></i></span>
             <div id="modal-content"></div>
         </div>
     </div>
@@ -86,7 +83,7 @@
                     <i class="fas fa-bolt logo-icon"></i>
                     <div class="logo-text">FREERANKSCLIENT</div>
                 </div>
-                <p data-translate="footerText">Получите эксклюзивные ранги для Bloxd.io бесплатно!</p>
+                <p><i class="fas fa-gem"></i> Get exclusive ranks for Bloxd.io for free!</p>
                 <div class="social-links">
                     <a href="https://discord.com/users/ERR0R9999K" class="social-link" target="_blank">
                         <i class="fab fa-discord"></i>
@@ -99,8 +96,8 @@
                     </a>
                 </div>
             </div>
-            <div class="copyright" data-translate="copyright">
-                &copy; 2025 FreeRanksClient. Все права защищены. | Это фанатский проект, не связанный с официальными разработчиками Bloxd.io
+            <div class="copyright">
+                <i class="far fa-copyright"></i> 2025 FreeRanksClient. All rights reserved. | <i class="fas fa-heart" style="color: #ff3366;"></i> This is a fan project, not affiliated with the official Bloxd.io developers
             </div>
         </div>
     </footer>
