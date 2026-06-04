@@ -7,7 +7,7 @@
     z-index: -1;
 }
 
-/* Основные стили для videos page */
+/* Basic Styles */
 .videos-page {
     padding: 80px 0;
     background: rgba(26, 26, 26, 0.6);
@@ -185,7 +185,7 @@
     box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
 }
 
-/* Кнопка возврата */
+/* Back button*/
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -216,7 +216,7 @@ nav a.active i {
     color: #ff0000 !important;
 }
 
-/* Адаптивность */
+/* Adaptability */
 @media (max-width: 768px) {
     .videos-grid {
         grid-template-columns: 1fr;

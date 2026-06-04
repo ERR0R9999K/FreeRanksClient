@@ -7,7 +7,7 @@
     z-index: -1;
 }
 
-/* Основные стили для devlog */
+/* Basic Styles */
 .devlog {
     padding: 80px 0;
     background: rgba(26, 26, 26, 0.6);
@@ -41,7 +41,7 @@
     margin: 0 auto;
 }
 
-/* Стили для записей обновлений */
+/* Styles for recording updates */
 .update-entry {
     background: linear-gradient(145deg, #1a1a2e, #2d1b4e);
     border-radius: 15px;
@@ -138,7 +138,20 @@
     transform: scale(1.05);
 }
 
-/* Кнопка возврата */
+/* Code example styling */
+.code-example {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #ffcc00;
+    display: inline-block;
+    margin-top: 5px;
+    word-break: break-all;
+}
+
+/* Back button */
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -160,8 +173,13 @@
     box-shadow: 0 6px 20px rgba(138, 43, 226, 0.6);
 }
 
-/* Адаптивность */
+/* Adaptability */
 @media (max-width: 768px) {
+    .code-example {
+        font-size: 0.7rem;
+        word-break: break-word;
+    }
+	
     .update-content {
         flex-direction: column-reverse;
     }

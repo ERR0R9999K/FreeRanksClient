@@ -55,19 +55,6 @@ header {
     font-weight: bold;
 }
 
-.language-switcher {
-    background: linear-gradient(135deg, #8a2be2, #6a0dad);
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: bold;
-}
-
 nav ul {
     display: flex;
     list-style: none;
@@ -83,6 +70,10 @@ nav a {
     align-items: center;
     gap: 8px;
     cursor: pointer;
+}
+
+nav a:hover {
+    color: #ba55d3;
 }
 
 /* Main banner */
