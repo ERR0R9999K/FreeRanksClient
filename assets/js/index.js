@@ -1,37 +1,54 @@
-let selectedLanguage = null;
-
-function selectLanguage(lang) {
-    selectedLanguage = lang;
-    
-    document.querySelectorAll('.language-card').forEach(card => {
-        card.classList.remove('selected');
+// Smooth scrolling for anchor links
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
-   
-    event.currentTarget.classList.add('selected');
-    
-    const continueBtn = document.getElementById('continue-btn');
-    const continueText = document.getElementById('continue-text');
-    continueBtn.disabled = false;
-   
-    if (lang === 'en') {
-        continueText.textContent = 'Continue to Website';
-    } else {
-        continueText.textContent = 'Перейти на сайт';
-    }
-}
 
-function continueToHome() {
-    if (selectedLanguage) {
-        localStorage.setItem('selectedLanguage', selectedLanguage);
-        window.location.href = 'home.html';
-    }
-}
-
-window.addEventListener('DOMContentLoaded', function() {
-    const userLang = navigator.language || navigator.userLanguage;
-    
-    if (userLang.startsWith('ru')) {
-        selectLanguage('ru');
+    // Home link scroll to top
+    const homeLink = document.getElementById('home-link');
+    if (homeLink) {
+        homeLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     }
 });
 
+// Modal functions for Verified rank
+function openVerifiedModal() {
+    const modal = document.getElementById('verified-modal');
+    modal.style.display = 'flex';
+}
+
+function closeVerifiedModal() {
+    const modal = document.getElementById('verified-modal');
+    modal.style.display = 'none';
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('verified-modal');
+    if (event.target === modal) {
+closeVerifiedModal();
+    }
+});
+
+// Close modal on Escape key
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+closeVerifiedModal();
+    }
+});
