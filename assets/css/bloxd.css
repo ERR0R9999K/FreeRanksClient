@@ -1,9 +1,3 @@
-:root {
-    --space-bg: url('https://i.postimg.cc/NMG91FWH/space-BG-loco.jpg');
-    --client-bg: url('https://err0r9999k.github.io/FreeRanksClient/assets/images/skybox.png');
-    --client-logo: url('https://err0r9999k.github.io/FreeRanksClient/assets/images/FreeRanksClient.png');
-}
-
 /* Styles For Bloxd Io! */
 body {
     background: rgba(255, 255, 255, 0.2) !important;
@@ -132,7 +126,7 @@ body {
 .FRC.InfoText.Normal.GitHub { color: #fff !important; }
 .FRC.InfoText.Normal.Discord { color: #5d6af1 !important; }
 .FRC.InfoText.Normal.SpaceBG {
-    background: url(var(--space-bg)) !important;
+    background: var(--space-bg) !important;
     background-size: cover !important;
     border-radius: 10px !important;
     padding: 0.3em !important;
@@ -177,7 +171,7 @@ body {
 
 /* ============================================================ Background ============================================================ */
 .HomePageInner, .LoadingOverlay {
-    background-image: url(var(--client-bg)) !important;
+    background-image: var(--client-bg) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
@@ -192,7 +186,7 @@ body {
 }
 
 .LogoLoaderLoadingBar {
-    background-image: url(var(--client-logo)) !important;
+    background-image: var(--client-logo) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
