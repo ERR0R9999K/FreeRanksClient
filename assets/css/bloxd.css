@@ -998,14 +998,16 @@ body {
     backdrop-filter: blur(.4rem) !important;
 }
 
-.CloseGameInformation {
+.CloseGameInformation .BackButton {
     background-color: rgba(0, 0, 0, 0.2) !important;
     border: 2px solid rgba(0, 0, 0, 0.4) !important;
-    color: #000000 !important;
+    color: rgba(255, 255, 255, 0.4) !important;
     font-weight: bold !important;
     text-shadow: 0 0 0 transparent !important;
     -webkit-backdrop-filter: blur(.4rem) !important;
     backdrop-filter: blur(.4rem) !important;
+	padding-left: 0.5em !important;
+	padding-right: 0.5em !important;
 }
 
 .CustomGameChipLabel {
@@ -1428,6 +1430,60 @@ body {
     background: rgba(0, 0, 0, 0.2) !important;
     border: 2px solid rgba(0, 0, 0, 0.4) !important;
     border-radius: 10px !important;
+}
+
+.CosmeticShopCardOverlay {
+	background: linear-gradient(#00000000 40%,#000000) !important;
+}
+
+.CosmeticShopCard {
+    background-color: #000000 !important;
+    border: .2rem solid #000000 !important;
+}
+
+.CosmeticShopCardFooter {
+	background: linear-gradient(-45deg, #ffffff80, #000000) !important;
+}
+
+.CharCustomPart.CharCustomProfileEffect .ProfilePreview {
+	height: auto !important;
+}
+
+.CosmeticShopDetailFooter, .CosmeticShopDetailHeader {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border: 2px solid rgba(0, 0, 0, 0.4) !important;
+    -webkit-backdrop-filter: blur(.4rem) !important;
+    backdrop-filter: blur(.4rem) !important;
+}
+
+.CosmeticShopDetailTitle, .CosmeticPackItemCount {
+	color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.CosmeticPackItemCount {
+	border: .2rem solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.CosmeticShopDetailHeaderSide .BackButton {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+    font-weight: bold !important;
+    text-shadow: 0 0 0 transparent !important;
+    -webkit-backdrop-filter: blur(.4rem) !important;
+    backdrop-filter: blur(.4rem) !important;
+	padding-left: 0.5em !important;
+	padding-right: 0.5em !important;
+}
+
+.CosmeticShopDetailTypeLabel {
+	border-bottom: .1rem solid rgba(255, 255, 255, 0.4) !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.EmoteCustomPartLabel {
+	color: rgba(255, 255, 255, 0.4) !important;
+	text-shadow: none !important;
 }
 
 .MenuSideBar {
