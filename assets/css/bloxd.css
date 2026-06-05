@@ -1010,6 +1010,10 @@ body {
 	padding-right: 0.5em !important;
 }
 
+.CloseGameInformation.CloseGameInformationSticky {
+    background-color: #00000000 !important;
+}
+
 .CustomGameChipLabel {
     color: #000000 !important;
     font-weight: bold !important;
