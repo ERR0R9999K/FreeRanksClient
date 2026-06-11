@@ -493,9 +493,24 @@ body {
     background-color: transparent !important;
 }
 
-.HomePageActionBar {
+.HomePageActionBar, .RecentlyPlayedGameTitle {
     background: rgba(0, 0, 0, 0.2) !important;
     border: 2px solid rgba(0, 0, 0, 0.4) !important;
+	color: rgba(255, 255, 255, 0.4) !important;
+	text-shadow: none !important;
+}
+
+.RainbowButton {
+	color: #fff !important;
+}
+
+.RecentlyPlayedGame {
+    border: 2px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+.RecentlyPlayedGameName {
+	color: rgba(255, 255, 255, 0.8) !important;
+	text-shadow: none !important;
 }
 
 .JoinPartyInput {
@@ -1201,7 +1216,7 @@ body {
     background: none !important;
 }
 
-.CustomGameListHeader {
+.CustomGameListHeader, .CustomGameListHeaderDivider {
     background: rgba(0, 0, 0, 0.2) !important;
     border: 2px solid rgba(0, 0, 0, 0.4) !important;
 }
@@ -1261,7 +1276,7 @@ body {
 .CustomGameListContainer .BackButton {
     background-color: rgba(0, 0, 0, 0.2) !important;
     border: 2px solid rgba(0, 0, 0, 0.4) !important;
-    color: #000000 !important;
+    color: rgba(255, 255, 255, 0.4) !important;
     font-weight: bold !important;
     text-shadow: 0 0 0 transparent !important;
     -webkit-backdrop-filter: blur(.4rem) !important;
@@ -1729,6 +1744,10 @@ body {
     color: transparent !important;
     font-weight: bold !important;
     display: inline-block;
+}
+
+.HomePagePartyInformationIcon {
+	color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .PartyCode {
