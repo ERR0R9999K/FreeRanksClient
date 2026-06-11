@@ -1201,20 +1201,9 @@ body {
     background: none !important;
 }
 
-.CustomGameListHeader, .RecentlyPlayedGameTitle, .CustomGameListHeaderDivider {
+.CustomGameListHeader {
     background: rgba(0, 0, 0, 0.2) !important;
     border: 2px solid rgba(0, 0, 0, 0.4) !important;
-    color: rgba(255, 255, 255, 0.4) !important;
-	text-shadow: none !important;
-}
-
-.RecentlyPlayedGame {
-    border: 2px solid rgba(255, 255, 255, 0.4) !important;
-}
-
-.RecentlyPlayedGameName {
-    color: rgba(255, 255, 255, 0.8) !important;
-	text-shadow: none !important;
 }
 
 .CustomGamePagination {
@@ -1264,10 +1253,15 @@ body {
     backdrop-filter: blur(.4rem) !important;
 }
 
+.CustomGameListHeaderDivider {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border: 2px solid rgba(0, 0, 0, 0.4) !important;
+}
+
 .CustomGameListContainer .BackButton {
     background-color: rgba(0, 0, 0, 0.2) !important;
     border: 2px solid rgba(0, 0, 0, 0.4) !important;
-    color: rgba(255, 255, 255, 0.4) !important;
+    color: #000000 !important;
     font-weight: bold !important;
     text-shadow: 0 0 0 transparent !important;
     -webkit-backdrop-filter: blur(.4rem) !important;
@@ -2084,9 +2078,13 @@ body {
     }
 }
 
-.ItemAmount {
-    color: rgba(255, 255, 255, 0.6) !important;
+.ItemAmount, .IconKeyboardButtonHelper, .AuraBarLabel  {
+    color: rgba(255, 255, 255, 0.8) !important;
     text-shadow: 0 0 0 transparent !important;
+}
+
+.AuraBarLabel {
+	left: 50% !important;
 }
 
 /* Controls */
