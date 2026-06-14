@@ -1529,6 +1529,11 @@ body {
 }
 
 /* ============================================================ Settings ============================================================ */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(0deg, #ffffff80, #000000) !important;
+    border-radius: 0;
+}
+
 .CarouselArrow {
     background: rgba(0, 0, 0, 0.3) !important;
     border: 2px solid rgba(0, 0, 0, 0.5) !important;
