@@ -1519,9 +1519,16 @@ body {
 	background: rgba(255, 255, 255, 0.2) !important;
 }
 
+.ͼo, .ͼo .cm-tooltip {
+	background: rgba(0, 0, 0, 0.8) !important;
+	color: rgba(255, 255, 255, 0.6) !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+}
+
 .ͼ1 .cm-gutters-before {
 	background: rgba(0, 0, 0, 0.6) !important;
 	color: rgba(255, 255, 255, 0.6) !important;
+    border-right: 2px solid rgba(255, 255, 255, 0.5) !important;
 }
 
 .ͼo .cm-activeLineGutter {
