@@ -14,8 +14,8 @@
 // @match        https://*.bloxdunblocked.space/*
 // @icon         https://err0r9999k.github.io/FreeRanksClient/assets/images/FreeRanksClient.png
 // @homepageURL  https://err0r9999k.github.io/FreeRanksClient/
-// @downloadURL  https://err0r9999k.github.io/FreeRanksClient/assets/releases/FreeRanksClient_v4.0.0.user.js
-// @updateURL    https://err0r9999k.github.io/FreeRanksClient/assets/releases/FreeRanksClient_v4.0.0.user.js
+// @downloadURL  https://err0r9999k.github.io/FreeRanksClient/assets/releases/FreeRanksClient_v4.4.1.user.js
+// @updateURL    https://err0r9999k.github.io/FreeRanksClient/assets/releases/FreeRanksClient_v4.4.1.user.js
 // @require      https://kit.fontawesome.com/a076d05399.js
 // @grant        GM_xmlhttpRequest
 // @connect      script.google.com
