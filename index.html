@@ -407,12 +407,12 @@
                         <div class="release-date"><i class="far fa-calendar-alt"></i> May 23, 2026</div>
                     </div>
                     <div class="release-download">
-                        <a href="assets/releases/FreeRanksClient_v4.4.4.user.js" class="release-btn">
+                        <a href="#" class="release-btn" onclick="openDownloadModal('assets/releases/FreeRanksClient_v4.4.4.user.js'); return false;">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
                 </div>
-				
+                
                 <!-- Release 4.4.1 -->
                 <div class="release-card">
                     <div class="release-icon">
@@ -424,7 +424,7 @@
                         <div class="release-date"><i class="far fa-calendar-alt"></i> Apr 30, 2026</div>
                     </div>
                     <div class="release-download">
-                        <a href="assets/releases/FreeRanksClient_v4.4.1.user.js" class="release-btn">
+                        <a href="#" class="release-btn" onclick="openDownloadModal('assets/releases/FreeRanksClient_v4.4.1.user.js'); return false;">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
@@ -441,12 +441,11 @@
                         <div class="release-date"><i class="far fa-calendar-alt"></i> Apr 11, 2026</div>
                     </div>
                     <div class="release-download">
-                        <a href="assets/releases/FreeRanksClient_v4.0.0.user.js" class="release-btn">
+                        <a href="#" class="release-btn" onclick="openDownloadModal('assets/releases/FreeRanksClient_v4.0.0.user.js'); return false;">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
                 </div>
-			<!--  -->
             </div>
         </div>
     </section>
@@ -492,6 +491,53 @@
             </div>
         </div>
     </footer>
+	
+	<!-- Download Confirmation Modal -->
+	<div id="download-modal" class="modal">
+		<div class="modal-content download-modal-content">
+			<span class="modal-close" onclick="closeDownloadModal()">&times;</span>
+			<div class="download-modal-body">
+				<div class="download-modal-icon">
+					<i class="fas fa-shield-alt"></i>
+				</div>
+				<h2>Download Confirmation</h2>
+				<p class="download-modal-text">
+					Before downloading FreeRanksClient, please read the 
+					<a href="privacy.html" target="_blank" class="privacy-link">Privacy Policy</a> 
+					and confirm your agreement.
+				</p>
+				
+				<div class="download-checkbox-group">
+					<label class="download-checkbox-label">
+						<input type="checkbox" id="privacy-consent">
+						<span class="checkmark-custom"></span>
+						<span class="checkbox-text">
+							I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> of FreeRanksClient
+						</span>
+					</label>
+				</div>
+
+				<!-- reCAPTCHA -->
+				<div class="recaptcha-wrapper">
+					<div class="g-recaptcha" id="recaptcha-container">
+						<!-- reCAPTCHA will be inserted here via JS -->
+					</div>
+				</div>
+
+				<div class="download-modal-actions">
+					<button class="download-confirm-btn" id="confirm-download-btn" disabled>
+						<i class="fas fa-download"></i> Download
+					</button>
+					<button class="download-cancel-btn" onclick="closeDownloadModal()">
+						<i class="fas fa-times"></i> Cancel
+					</button>
+				</div>
+				<p class="download-modal-footnote">
+					<i class="fas fa-info-circle"></i> By clicking "Download", you confirm that you have read the Privacy Policy
+				</p>
+			</div>
+		</div>
+	</div>
 
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/index.js"></script>
