@@ -1117,3 +1117,234 @@ footer {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* Download Modal Styles */
+.download-modal-content {
+    max-width: 520px !important;
+    padding: 35px 40px !important;
+}
+
+.download-modal-body {
+    text-align: center;
+}
+
+.download-modal-icon {
+    font-size: 3.5rem;
+    color: #44ff44;
+    margin-bottom: 15px;
+}
+
+.download-modal-body h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #f0f0f0;
+    margin-bottom: 12px;
+}
+
+.download-modal-text {
+    color: #d0d0d0;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.download-modal-text .privacy-link {
+    color: #ba55d3;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.download-modal-text .privacy-link:hover {
+    color: #cc66ff;
+}
+
+.download-checkbox-group {
+    margin: 20px 0;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.download-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #d0d0d0;
+}
+
+.download-checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark-custom {
+    width: 22px;
+    height: 22px;
+    background: #1a1a2e;
+    border: 2px solid #555;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+.download-checkbox-label input:checked + .checkmark-custom {
+    background: #8a2be2;
+    border-color: #8a2be2;
+}
+
+.download-checkbox-label input:checked + .checkmark-custom::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.download-checkbox-label a {
+    color: #ba55d3;
+    text-decoration: underline;
+}
+
+.download-checkbox-label a:hover {
+    color: #cc66ff;
+}
+
+.recaptcha-wrapper {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#recaptcha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+}
+
+.download-modal-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.download-confirm-btn {
+    background: linear-gradient(135deg, #44ff44, #00cc00);
+    color: #0a0a0a;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.download-confirm-btn.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.download-confirm-btn.active:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(68, 255, 68, 0.4);
+}
+
+.download-cancel-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #d0d0d0;
+    border: 1px solid #444;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #666;
+}
+
+.download-modal-footnote {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 18px;
+}
+
+.download-modal-footnote i {
+    color: #ba55d3;
+}
+
+/* Responsive for download modal */
+@media (max-width: 600px) {
+    .download-modal-content {
+        padding: 25px 20px !important;
+        width: 95%;
+    }
+    
+    .download-modal-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .download-confirm-btn,
+    .download-cancel-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .download-checkbox-label {
+        font-size: 0.85rem;
+    }
+}
+
+/* Fix for checkbox text wrapping */
+.download-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #d0d0d0;
+    line-height: 1.5;
+}
+
+.download-checkbox-label .checkmark-custom {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.download-checkbox-label .checkbox-text {
+    flex: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.download-checkbox-label a {
+    color: #ba55d3;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.download-checkbox-label a:hover {
+    color: #cc66ff;
+}
