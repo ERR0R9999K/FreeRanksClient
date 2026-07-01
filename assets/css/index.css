@@ -732,6 +732,14 @@ nav a:hover {
     color: #555;
 }
 
+.review-star[style*="background: linear-gradient"] {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none !important;
+}
+
 .review-text {
     color: #d0d0d0;
     line-height: 1.6;
