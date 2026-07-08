@@ -1,6 +1,6 @@
 /* Styles For Bloxd Io! */
 body {
-    background: rgba(255, 255, 255, 0.2) !important;
+    background: linear-gradient(-45deg, #ffffff, #000000) !important;
 }
 
 @font-face {
@@ -493,15 +493,41 @@ body {
 }
 
 /* ============================================================ Home Page Action Bar ============================================================ */
-.HomePagePartyBar, .HomePageActionBarCCU, .ActionShortcutBarElement, .PartyBar {
+.HomePagePartyBar, .HomePageActionBarCCU, .ActionShortcutBarElement, .PartyBar, .CategoryGameListHeader, .CategoryGameListHeaderDivider {
     background-color: transparent !important;
+	text-shadow: none !important;
 }
 
-.HomePageActionBar, .RecentlyPlayedGameTitle {
+.CategoryGameListHeaderDivider {
+	display: none !important;
+}
+
+.HomePageActionBar, .RecentlyPlayedGameTitle, .CategoryGameListHeader {
     background: rgba(0, 0, 0, 0.2) !important;
     border: 2px solid rgba(0, 0, 0, 0.4) !important;
 	color: rgba(255, 255, 255, 0.4) !important;
 	text-shadow: none !important;
+}
+
+.CategoryGameListHeader .BlueButton {
+    background: linear-gradient(90deg, #ffffff, #000000) !important;
+    background-color: transparent !important;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    text-shadow: 0 0 0 transparent !important;
+}
+
+.CategoryGameListHeader .BlueButton .ButtonTopBorder, .ButtonBottomBorder {
+    background: none !important;
+}
+
+.CategoryGameListHeader .BlueButton .ButtonBody {
+    background: linear-gradient(-90deg, #ffffff, #000000) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    color: transparent !important;
+    font-weight: bold !important;
+    display: inline-block !important;
 }
 
 .RainbowButton {
@@ -521,7 +547,7 @@ body {
     margin-right: 5px !important;
 }
 
-.JoinPartyHashtag {
+.JoinPartyHashtag, .CategoryGameListSearchIcon {
     background: rgba(255, 255, 255, 0.2) !important;
     border: 2px solid rgba(255, 255, 255, 0.4) !important;
     border-radius: 10px !important;
@@ -2352,6 +2378,57 @@ body {
     text-shadow: 0 0 0 transparent !important;
 }
 
+.LinksPopupLink {
+	background: linear-gradient(-90deg, #ffffff, #000000) !important;
+	text-shadow: none !important
+}
+
+.LinksPopupLabel, .LinksPopupTitle {
+    color: rgba(255, 255, 255, 0.6) !important;
+	text-shadow: none !important
+}
+
+.LinksPopupLinkName {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.LinksPopupLinkHandle {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.LinksPopupLinkIcon {
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Error Screen */
+.RouterError .RouterErrorIcons .svg-inline--fa, h1, h2 {
+	color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.CopyErrorBox, .CopyErrorBoxBody {
+	background: rgba(0, 0, 0, 0.4) !important;
+	color: #ffffff !important;
+}
+
+.CopyErrorBox .BlueButton.CopyErrorBoxButton {
+	background: rgba(255, 255, 255, 0.2) !important;
+    border: 2px solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.CopyErrorBox .ButtonBottomBorder, .ButtonTopBorder {
+	background: transparent !important;
+}
+
+.RouterError .GoldButton.GoToHomePageButton {
+	background: rgba(0, 0, 0, 0.2) !important;
+    border: 2px solid rgba(0, 0, 0, 0.4) !important;
+}
+
+.grecaptcha-badge {
+	display: none !important;
+	width: 0 !important;
+	height: 0 !important;
+}
 /* ============================================================ Shop ============================================================ */
 .LobbyLeaderboard table thead th {
     background: rgba(255, 255, 255, 0.2) !important;
