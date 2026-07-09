@@ -59,9 +59,18 @@ body {
     background-color: #00000000 !important;
 }
 
-.InGameHeader, .FpsWrapperDiv, .CoordinateUI, .CondensedSection, .SocialBarDividerContainer, .CondensedSectionFriendRequests, .CondensedSectionOnlineFriends, .CondensedSectionParty, .InGameHeaderSpacer {
+.InGameHeader, .FpsWrapperDiv, .CoordinateUI, .CondensedSection, .SocialBarDividerContainer, .CondensedSectionFriendRequests, .CondensedSectionOnlineFriends, .CondensedSectionParty, .InGameHeaderSpacer, .HeaderChip {
     background: none !important;
     border: none !important;
+}
+
+.TextFromServerProgressBar {
+	background: rgba(255, 255, 255, 0.4) !important;
+	border: 1px solid rgba(0, 0, 0, 0.6) !important;
+}
+
+.TextFromServerProgressBarFillInner {
+	background: linear-gradient(90deg, #ffffff, #000000) !important
 }
 
 .ShopItems {
