@@ -959,24 +959,11 @@ body {
     background: linear-gradient(90deg, #ffffff, #000000) !important;
     background-color: transparent !important;
     border: 2px solid rgba(255, 255, 255, 0.4) !important;
-    color: rgba(0, 0, 0, 0.4) !important;
+    color: #ffffff !important;
     text-shadow: 0 0 0 transparent !important;
 }
 
-.GoldButton.GameInformationButton .ButtonTopBorder {
-    background: none !important;
-}
-
-.GoldButton.GameInformationButton .ButtonBody {
-    background: linear-gradient(-90deg, #ffffff, #000000) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
-    color: transparent !important;
-    font-weight: bold !important;
-    display: inline-block !important;
-}
-
-.GoldButton.GameInformationButton .ButtonBottomBorder {
+.GoldButton.GameInformationButton .ButtonTopBorder, .GoldButton.GameInformationButton .ButtonBottomBorder {
     background: none !important;
 }
 
@@ -1020,6 +1007,11 @@ body {
     text-shadow: 0 0 0 transparent !important;
     -webkit-backdrop-filter: blur(.4rem) !important;
     backdrop-filter: blur(.4rem) !important;
+}
+
+.GameInformationTitleAndChips .FullyFancyText {
+	color: #ffffff !important;
+	text-shadow: nonw !important;
 }
 
 .CloseGameInformation .BackButton {
