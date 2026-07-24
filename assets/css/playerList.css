@@ -174,6 +174,7 @@ nav a:hover {
     position: relative;
     transition: transform 0.2s, box-shadow 0.2s;
     height: fit-content;
+    cursor: pointer;
 }
 
 .player-card:hover {
@@ -559,34 +560,151 @@ footer {
     border-bottom: 1px dashed #4caf50;
 }
 
-/* Preview tooltip */
+/* ========== PREVIEW TOOLTIP STYLES ========== */
 .preview-tooltip {
     position: fixed;
-    background: #2d1b4e;
-    border: 2px solid #8a2be2;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    background: rgba(20, 10, 40, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(138, 43, 226, 0.3);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(138, 43, 226, 0.1);
     z-index: 2000;
     pointer-events: none;
-    max-width: 300px;
-    animation: fadeIn 0.2s ease;
+    max-width: 350px;
+    animation: previewFadeIn 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.2s ease;
 }
 
-.preview-tooltip img {
-    display: block;
-    max-width: 100%;
-    border-radius: 6px;
-}
-
-@keyframes fadeIn {
+@keyframes previewFadeIn {
     from {
         opacity: 0;
-        transform: translateY(5px);
+        transform: scale(0.95) translateY(8px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Rank Preview */
+.rank-preview {
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* Cape Preview */
+.cape-preview {
+    min-width: 150px;
+    text-align: center;
+}
+
+.cape-preview img {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+/* NameTag Preview */
+.nametag-preview {
+    min-width: 200px;
+    padding: 20px;
+}
+
+.nametag-preview .nametag-main {
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.nametag-preview .nametag-main span {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.nametag-preview .nametag-subtitle {
+    padding: 6px 14px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: inline-block;
+    text-align: center;
+}
+
+.nametag-preview .nametag-subtitle span {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+/* Color info section */
+.nametag-preview .color-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.nametag-preview .color-info .color-swatch {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.nametag-preview .color-info .color-label {
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Border info */
+.nametag-preview .border-info {
+    margin-top: 8px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: #888;
+    text-align: center;
+}
+
+.nametag-preview .border-info i {
+    margin-right: 4px;
+}
+
+/* Border pulse animation - will be injected by JS */
+@keyframes borderPulse {
+    0%, 100% {
+        box-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.2),
+            0 0 20px rgba(255, 255, 255, 0.1),
+            inset 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        box-shadow: 
+            0 0 20px rgba(255, 255, 255, 0.4),
+            0 0 40px rgba(255, 255, 255, 0.2),
+            inset 0 0 20px rgba(255, 255, 255, 0.2);
     }
 }
 
@@ -609,6 +727,16 @@ footer {
     
     .modal-info-label {
         min-width: auto;
+    }
+    
+    .preview-tooltip {
+        max-width: 280px;
+        padding: 12px;
+    }
+    
+    .nametag-preview {
+        min-width: 160px;
+        padding: 15px;
     }
 }
 
@@ -656,6 +784,25 @@ footer {
     margin-left: 10px;
     border: 1px solid rgba(138, 43, 226, 0.5);
     color: #b87cff;
+}
+
+/* Scrollbar styling for modal */
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+    border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #9b3ff5, #7a1dbd);
 }
 
 @media (max-width: 768px) {
