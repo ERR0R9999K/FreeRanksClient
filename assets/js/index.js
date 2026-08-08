@@ -1,7 +1,7 @@
 // ============ REVIEWS CONFIGURATION ============
 const ReviewsConfig = [
     {
-        nickname: "_GEORGECR_",
+        nickname: "Mr_GE0RGECR",
         rating: 5,
         review: "Why would you ever need super rank when you have FreeRanksClient!!!"
     },
