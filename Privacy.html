@@ -22,11 +22,11 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="https://err0r9999k.github.io/FreeRanksClient/"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="https://err0r9999k.github.io/FreeRanksClient/#features"><i class="fas fa-star"></i> Features</a></li>
-                        <li><a href="https://err0r9999k.github.io/FreeRanksClient/#ranks"><i class="fas fa-crown"></i> Ranks</a></li>
-                        <li><a href="https://err0r9999k.github.io/FreeRanksClient/#instructions"><i class="fas fa-download"></i> Installation</a></li>
-                        <li><a href="https://err0r9999k.github.io/FreeRanksClient/#releases"><i class="fas fa-code-branch"></i> Releases</a></li>
+                        <li><a href="/FreeRanksClient/"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="/FreeRanksClient/#features"><i class="fas fa-star"></i> Features</a></li>
+                        <li><a href="/FreeRanksClient/#ranks"><i class="fas fa-crown"></i> Ranks</a></li>
+                        <li><a href="/FreeRanksClient/#instructions"><i class="fas fa-download"></i> Installation</a></li>
+                        <li><a href="/FreeRanksClient/#releases"><i class="fas fa-code-branch"></i> Releases</a></li>
                     </ul>
                 </nav>
             </div>
@@ -79,7 +79,7 @@
 
                 <div class="policy-divider"></div>
 
-                <!-- НОВЫЙ БЛОК: Технологическая основа -->
+                <!-- ===== TECHNOLOGICAL BASIS ===== -->
                 <h2><i class="fas fa-cubes"></i> Technology Stack</h2>
                 <p>
                     FreeRanksClient is built on a modern and reliable technology stack. 
@@ -105,7 +105,7 @@
                     </div>
                     <div class="tech-item">
                         <img src="assets/images/Babylon.png" alt="Babylon.js" class="tech-icon" onerror="this.style.display='none'">
-                        <span class="tech-name">Babylon.js 8.13.0</span>
+                        <span class="tech-name">Babylon.js 9.19.0</span>
                         <span class="tech-desc">3D rendering &amp; visual effects</span>
                     </div>
                 </div>
@@ -200,6 +200,169 @@
 
                 <div class="policy-divider"></div>
 
+				<!-- ===== REGISTRATION SYSTEM ===== -->
+				<h2><i class="fas fa-user-plus"></i> New Personalization System (v4.6.0+)</h2>
+				<p>
+					Starting from version <strong>4.6.0</strong>, FreeRanksClient features a 
+					<strong>convenient registration form directly on the website</strong>. 
+					The process of getting a personalized client has never been easier or faster!
+				</p>
+
+				<div class="policy-note" style="border-left-color: #44ff44;">
+					<i class="fas fa-rocket" style="color: #44ff44;"></i>
+					<div>
+						<strong>How does it work?</strong><br>
+						1. Click <strong>"Download"</strong> on the website — the registration window will open.<br>
+						2. <strong>Fill out the form:</strong> Enter your in-game nickname, select your desired rank 
+						(you can pick multiple!), nickname color, and your preferred cape.<br>
+						3. Click <strong>"Next"</strong> — the client is <strong>instantly generated</strong> 
+						specifically for you!<br>
+						4. <strong>Download the ready script</strong> and install it in Tampermonkey.
+					</div>
+				</div>
+
+				<h3 style="color: #ba55d3; margin: 25px 0 15px; font-size: 1.2rem;">
+					<i class="fas fa-code" style="color: #8a2be2;"></i> What happens to your data?
+				</h3>
+				<p>
+					When you fill out the form, your data is <strong>written directly into the code</strong> 
+					of the downloaded client — this is your personal file that already contains all your 
+					chosen settings. You can manually change this data inside the client, but it will 
+					<strong>not affect</strong> how your rank appears to other players.
+				</p>
+
+				<div class="policy-divider" style="margin: 20px 0;"></div>
+
+				<h3 style="color: #ba55d3; margin: 0 0 15px; font-size: 1.2rem;">
+					<i class="fas fa-database" style="color: #8a2be2;"></i> How does rank display work?
+				</h3>
+				<p>
+					It's important to understand how the rank display system works:
+				</p>
+
+				<div class="data-grid" style="grid-template-columns: 1fr 1fr; margin: 15px 0 20px;">
+					<div class="data-item" style="border-color: rgba(68, 255, 68, 0.3);">
+						<i class="fab fa-discord" style="color: #5865F2;"></i>
+						<span style="font-size: 0.85rem;">Via Discord</span>
+						<span style="font-size: 0.8rem; color: #44ff44; margin-top: 4px;">✅ Everyone sees it</span>
+					</div>
+					<div class="data-item" style="border-color: rgba(68, 255, 68, 0.3);">
+						<i class="fas fa-globe" style="color: #8a2be2;"></i>
+						<span style="font-size: 0.85rem;">Via the website form</span>
+						<span style="font-size: 0.8rem; color: #44ff44; margin-top: 4px;">✅ Everyone sees it</span>
+					</div>
+					<div class="data-item" style="border-color: rgba(255, 68, 68, 0.3); grid-column: 1 / -1;">
+						<i class="fas fa-edit" style="color: #ff4444;"></i>
+						<span style="font-size: 0.85rem;">Manual changes in the code</span>
+						<span style="font-size: 0.8rem; color: #ff4444; margin-top: 4px;">❌ Only you see it</span>
+					</div>
+				</div>
+
+				<div class="policy-note" style="border-left-color: #ffcc00;">
+					<i class="fas fa-exclamation-triangle" style="color: #ffcc00;"></i>
+					<div>
+						<strong>Why is that?</strong><br>
+						The client uses a <strong>central database (DB)</strong> that stores all confirmed 
+						player data. When you launch the client, it accesses this DB and loads information 
+						about all players. If your nickname is not in the DB — the client only loads local 
+						data (the one written in your file), and <strong>only you</strong> will see your rank.
+					</div>
+				</div>
+
+				<p style="margin: 15px 0 5px;">
+					<strong>The main DB takes priority!</strong> This means:
+				</p>
+				<ul>
+					<li><i class="fas fa-check-circle" style="color: #44ff44;"></i> Ranks, nickname colors, and capes 
+					<strong>from the DB</strong> are visible to all players.</li>
+					<li><i class="fas fa-times-circle" style="color: #ff4444;"></i> Ranks that you manually wrote 
+					in the client code are <strong>not visible</strong> to other players.</li>
+				</ul>
+
+				<div class="policy-divider" style="margin: 20px 0;"></div>
+
+				<h3 style="color: #ba55d3; margin: 0 0 15px; font-size: 1.2rem;">
+					<i class="fas fa-sync-alt" style="color: #8a2be2;"></i> How to update your data in the DB?
+				</h3>
+				<p>
+					If you've registered but want to change your data (for example, change your rank or color):
+				</p>
+				<ol style="color: #d0d0d0; padding-left: 25px; margin: 10px 0 15px; line-height: 2;">
+					<li>Fill out the registration form <strong>again</strong> with your new data.</li>
+					<li>The developer will receive a notification and <strong>replace</strong> your old data 
+					in the DB with the new one.</li>
+					<li>After the DB update, all players will see your new settings.</li>
+				</ol>
+				<div class="policy-note" style="border-left-color: #ff4444; margin-top: 0;">
+					<i class="fas fa-exclamation-circle" style="color: #ff4444;"></i>
+					<div>
+						<strong>Important:</strong> Manually changing data in the client code 
+						<strong>will not update</strong> the information in the DB. Your changes will 
+						only be visible to you.
+					</div>
+				</div>
+
+				<div class="policy-divider" style="margin: 20px 0;"></div>
+
+				<h3 style="color: #ba55d3; margin: 0 0 15px; font-size: 1.2rem;">
+					<i class="fas fa-search" style="color: #8a2be2;"></i> How to check if you're in the DB?
+				</h3>
+				<p>
+					After installing the client, pay attention to the message in the 
+					<strong>top-right corner</strong> of the screen:
+				</p>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0;">
+					<div style="background: rgba(68, 255, 68, 0.08); border: 1px solid rgba(68, 255, 68, 0.2); border-radius: 12px; padding: 15px; text-align: center;">
+						<i class="fas fa-check-circle" style="color: #44ff44; font-size: 2rem; display: block; margin-bottom: 8px;"></i>
+						<span style="color: #44ff44; font-weight: 600;">You're in the DB</span>
+						<p style="font-size: 0.9rem; color: #a0a0a0; margin-top: 5px;">The local player load message <strong>does NOT appear</strong></p>
+					</div>
+					<div style="background: rgba(255, 68, 68, 0.08); border: 1px solid rgba(255, 68, 68, 0.2); border-radius: 12px; padding: 15px; text-align: center;">
+						<i class="fas fa-user-clock" style="color: #ffcc00; font-size: 2rem; display: block; margin-bottom: 8px;"></i>
+						<span style="color: #ffcc00; font-weight: 600;">You're NOT in the DB</span>
+						<p style="font-size: 0.9rem; color: #a0a0a0; margin-top: 5px;">You'll see the message <strong>"Loading local player..."</strong></p>
+					</div>
+				</div>
+				<p style="font-size: 0.95rem; color: #a0a0a0;">
+					<i class="fas fa-info-circle" style="color: #8a2be2;"></i>
+					If you see the local player loading message — your rank is only visible to you, 
+					until the developer adds you to the DB.
+				</p>
+
+				<div class="policy-divider" style="margin: 20px 0;"></div>
+
+				<h3 style="color: #ba55d3; margin: 0 0 15px; font-size: 1.2rem;">
+					<i class="fab fa-discord" style="color: #5865F2;"></i> Getting ranks via Discord
+				</h3>
+				<p>
+					The website registration system is a <strong>convenient additional way</strong> to get a 
+					personalized client. You can still contact the developer <strong>via Discord</strong> 
+					to get a rank. Both methods lead to the same result — your nickname will be added 
+					to the DB, and other players will see your rank.
+				</p>
+
+				<div class="policy-divider" style="margin: 20px 0;"></div>
+
+				<h3 style="color: #ba55d3; margin: 0 0 15px; font-size: 1.2rem;">
+					<i class="fas fa-shield-alt" style="color: #8a2be2;"></i> Your privacy is our priority
+				</h3>
+				<p>
+					Data from the registration form is <strong>used exclusively</strong> for:
+				</p>
+				<ul>
+					<li><i class="fas fa-file-code"></i> Generating your personal client (with your data embedded).</li>
+					<li><i class="fas fa-database"></i> Adding you to the DB (after verification by the developer).</li>
+				</ul>
+				<div class="policy-note" style="border-left-color: #8a2be2;">
+					<i class="fas fa-lock" style="color: #8a2be2;"></i>
+					<div>
+						We <strong>do not collect, store, or share</strong> your personal data with third parties. 
+						The entire process is completely transparent and secure.
+					</div>
+				</div>
+
+				<div class="policy-divider"></div>
+
                 <div class="policy-footer">
                     <p>
                         <i class="fas fa-gem"></i> 
@@ -207,10 +370,10 @@
                         free ranks. We value your trust and guarantee full transparency.
                     </p>
                     <div class="policy-links">
-                        <a href="https://err0r9999k.github.io/FreeRanksClient/" class="policy-btn primary">
+                        <a href="/FreeRanksClient/" class="policy-btn primary">
                             <i class="fas fa-arrow-left"></i> Back to Home
                         </a>
-                        <a href="https://err0r9999k.github.io/FreeRanksClient/#releases" class="policy-btn secondary">
+                        <a href="/FreeRanksClient/#releases" class="policy-btn secondary">
                             <i class="fas fa-download"></i> Download Client
                         </a>
                     </div>
