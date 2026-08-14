@@ -1567,7 +1567,7 @@ footer {
 }
 
 .download-checkbox-label input:checked + .checkmark-custom::after {
-    content: 'Ã¢Å“â€œ';
+    content: 'ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1961,6 +1961,8 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
 }
 
 #registration-modal .custom-option:hover {
