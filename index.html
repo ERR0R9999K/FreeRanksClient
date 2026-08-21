@@ -422,35 +422,35 @@
             
             <div class="releases-list">
 			
-                <!-- Release 4.6.1 -->
+                <!-- Release 4.6.2 -->
                 <div class="release-card">
                     <div class="release-icon">
                         <i class="fas fa-file-code"></i>
                     </div>
                     <div class="release-info">
-                        <div class="release-name">FreeRanksClient v4.6.1 Full</div>
+                        <div class="release-name">FreeRanksClient v4.6.2 Full</div>
                         <div class="release-version">Optimized Beta Release (Full version with all features. A strong device is required)</div>
-                        <div class="release-date"><i class="far fa-calendar-alt"></i> August 15, 2026</div>
+                        <div class="release-date"><i class="far fa-calendar-alt"></i> August 22, 2026</div>
                     </div>
                     <div class="release-download">
-                        <a href="#" class="release-btn" onclick="openDownloadModal('full', 'FRC v4.6.1 Full'); return false;">
+                        <a href="#" class="release-btn" onclick="openDownloadModal('full', 'FRC v4.6.2 Full'); return false;">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
                 </div>
                 
-                <!-- Release 4.6.1 Lite -->
+                <!-- Release 4.6.2 Lite -->
                 <div class="release-card">
                     <div class="release-icon">
                         <i class="fas fa-file-code"></i>
                     </div>
                     <div class="release-info">
-                        <div class="release-name">FreeRanksClient v4.6.1 Lite</div>
+                        <div class="release-name">FreeRanksClient v4.6.2 Lite</div>
                         <div class="release-version">Beta Release (Simplified version. A weaker device is required)</div>
-                        <div class="release-date"><i class="far fa-calendar-alt"></i> August 15, 2026</div>
+                        <div class="release-date"><i class="far fa-calendar-alt"></i> August 22, 2026</div>
                     </div>
                     <div class="release-download">
-                        <a href="#" class="release-btn" onclick="openDownloadModal('lite', 'FRC v4.6.1 Lite'); return false;">
+                        <a href="#" class="release-btn" onclick="openDownloadModal('lite', 'FRC v4.6.2 Lite'); return false;">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
@@ -501,133 +501,133 @@
         </div>
     </footer>
 	
-<!-- Registration Modal -->
-<div id="registration-modal" class="modal">
-    <div class="modal-content registration-modal-content">
-        <span class="modal-close" onclick="closeRegistrationModal()">&times;</span>
-        
-        <div class="registration-body">
-            <!-- Progress Bar -->
-            <div class="progress-wrap">
-                <div class="progress-bar" id="regProgressBar" style="width: 0%;"></div>
-            </div>
-            <div class="progress-text">
-                <span id="regStepLabel">Step 1 of 4</span>
-                <span class="step-indicator" id="regStepIndicator">1/4</span>
-            </div>
+	<!-- Registration Modal -->
+	<div id="registration-modal" class="modal">
+		<div class="modal-content registration-modal-content">
+			<span class="modal-close" onclick="closeRegistrationModal()">&times;</span>
+			
+			<div class="registration-body">
+				<!-- Progress Bar -->
+				<div class="progress-wrap">
+					<div class="progress-bar" id="regProgressBar" style="width: 0%;"></div>
+				</div>
+				<div class="progress-text">
+					<span id="regStepLabel">Step 1 of 4</span>
+					<span class="step-indicator" id="regStepIndicator">1/4</span>
+				</div>
 
-            <div class="slider-wrapper">
-                <div class="pages-slider" id="regSlider">
-                    <!-- PAGE 1: Welcome -->
-                    <div class="page welcome-page" data-step="0">
-                        <div class="content">
-                            <h2>👋 Welcome</h2>
-                            <p>Create your profile in a few minutes.<br>Join our community!</p>
+				<div class="slider-wrapper">
+					<div class="pages-slider" id="regSlider">
+						<!-- PAGE 1: Welcome -->
+						<div class="page welcome-page" data-step="0">
+							<div class="content">
+								<h2>👋 Welcome</h2>
+								<p>Create your profile in a few minutes.<br>Join our community!</p>
 
-                            <div class="g-recaptcha" id="regRecaptchaWrapper">
-                                <div class="recaptcha-checkbox" id="regRecaptchaCheckbox">
-                                    <div class="checkbox-container">
-                                        <div class="checkmark">✓</div>
-                                    </div>
-                                    <div class="loading-spinner"></div>
-                                    <span class="checkbox-label">I'm not a robot</span>
-                                </div>
-                                <div class="recaptcha-logo-container">
-                                    <div class="recaptcha-logo-icon"></div>
-                                    <div class="recaptcha-logo-text">reCAPTCHA</div>
-                                </div>
-                            </div>
+								<div class="g-recaptcha" id="regRecaptchaWrapper">
+									<div class="recaptcha-checkbox" id="regRecaptchaCheckbox">
+										<div class="checkbox-container">
+											<div class="checkmark">✓</div>
+										</div>
+										<div class="loading-spinner"></div>
+										<span class="checkbox-label">I'm not a robot</span>
+									</div>
+									<div class="recaptcha-logo-container">
+										<div class="recaptcha-logo-icon"></div>
+										<div class="recaptcha-logo-text">reCAPTCHA</div>
+									</div>
+								</div>
 
-                            <div class="privacy-check-wrap">
-                                <input type="checkbox" id="regPrivacyCheck">
-                                <label for="regPrivacyCheck">I accept the <a href="privacy.html" target="_blank">Privacy Policy</a></label>
-                            </div>
-                        </div>
+								<div class="privacy-check-wrap">
+									<input type="checkbox" id="regPrivacyCheck">
+									<label for="regPrivacyCheck">I accept the <a href="privacy.html" target="_blank">Privacy Policy</a></label>
+								</div>
+							</div>
 
-                        <div class="form-actions">
-                            <div class="left-buttons">
-                                <button class="btn-outline" id="regBackBtn0" disabled style="visibility:hidden;">← Back</button>
-                            </div>
-                            <button class="btn-primary" id="regNextBtn1" disabled>Continue →</button>
-                        </div>
-                    </div>
+							<div class="form-actions">
+								<div class="left-buttons">
+									<button class="btn-outline" id="regBackBtn0" disabled style="visibility:hidden;">← Back</button>
+								</div>
+								<button class="btn-primary" id="regNextBtn1" disabled>Continue →</button>
+							</div>
+						</div>
 
-                    <!-- PAGE 2: Profile Setup -->
-                    <div class="page form-page" data-step="1">
-                        <div class="content">
-                            <h3>⚙️ Profile Setup</h3>
-                            
-                            <div class="form-fields">
-                                <div class="field-group">
-                                    <label for="regNickname">Nickname (4-21 characters)</label>
-                                    <input type="text" id="regNickname" placeholder="Enter your nickname" value="">
-                                    <small>Min 4, max 21 characters</small>
-                                </div>
+						<!-- PAGE 2: Profile Setup -->
+						<div class="page form-page" data-step="1">
+							<div class="content">
+								<h3>⚙️ Profile Setup</h3>
+								
+								<div class="form-fields">
+									<div class="field-group">
+										<label for="regNickname">Nickname (4-21 characters)</label>
+										<input type="text" id="regNickname" placeholder="Enter your nickname" value="">
+										<small>Min 4, max 21 characters</small>
+									</div>
 
-                                <div class="field-group">
-                                    <label>Ranks (select multiple)</label>
-                                    <div class="custom-select-wrap" data-select="rank" data-multiple="true">
-                                        <div class="custom-select-trigger">
-                                            <span class="selected-text">Loading ranks...</span>
-                                            <span class="arrow">▼</span>
-                                        </div>
-                                        <div class="custom-options" id="regRankOptions">
-                                            <div class="loading-text">Loading ranks...</div>
-                                        </div>
-                                    </div>
-                                </div>
+									<div class="field-group">
+										<label>Ranks (select multiple)</label>
+										<div class="custom-select-wrap" data-select="rank" data-multiple="true">
+											<div class="custom-select-trigger">
+												<span class="selected-text">Loading ranks...</span>
+												<span class="arrow">▼</span>
+											</div>
+											<div class="custom-options" id="regRankOptions">
+												<div class="loading-text">Loading ranks...</div>
+											</div>
+										</div>
+									</div>
 
-                                <div class="field-group">
-                                    <label>Nickname Color</label>
-                                    <div class="custom-select-wrap" data-select="color">
-                                        <div class="custom-select-trigger">
-                                            <span class="selected-text">Select color</span>
-                                            <span class="arrow">▼</span>
-                                        </div>
-                                        <div class="custom-options" id="regColorOptions"></div>
-                                    </div>
-                                    <input type="color" id="regHiddenColorPicker" class="hidden-color-picker">
-                                </div>
+									<div class="field-group">
+										<label>Nickname Color</label>
+										<div class="custom-select-wrap" data-select="color">
+											<div class="custom-select-trigger">
+												<span class="selected-text">Select color</span>
+												<span class="arrow">▼</span>
+											</div>
+											<div class="custom-options" id="regColorOptions"></div>
+										</div>
+										<input type="color" id="regHiddenColorPicker" class="hidden-color-picker">
+									</div>
 
-                                <div class="field-group">
-                                    <label>Cape</label>
-                                    <div class="custom-select-wrap" data-select="cape">
-                                        <div class="custom-select-trigger">
-                                            <span class="selected-text">Select cape</span>
-                                            <span class="arrow">▼</span>
-                                        </div>
-                                        <div class="custom-options" id="regCapeOptions"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+									<div class="field-group">
+										<label>Cape</label>
+										<div class="custom-select-wrap" data-select="cape">
+											<div class="custom-select-trigger">
+												<span class="selected-text">Select cape</span>
+												<span class="arrow">▼</span>
+											</div>
+											<div class="custom-options" id="regCapeOptions"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 
-                        <div class="form-actions">
-                            <div class="left-buttons">
-                                <button class="btn-outline" id="regBackBtn1">← Back</button>
-                            </div>
-                            <button class="btn-success" id="regNextBtn2" disabled>Next →</button>
-                        </div>
-                    </div>
+							<div class="form-actions">
+								<div class="left-buttons">
+									<button class="btn-outline" id="regBackBtn1">← Back</button>
+								</div>
+								<button class="btn-success" id="regNextBtn2" disabled>Next →</button>
+							</div>
+						</div>
 
-                    <!-- PAGE 3: Thank You -->
-                    <div class="page thanks-page" data-step="2">
-                        <div class="content">
-                            <h2>🎉 Thank You!</h2>
-                            <p>Your profile has been set up successfully.<br>Your personalized client will be downloaded automatically.</p>
-                            <button class="btn-close-modal" id="regCloseModalBtn">Close</button>
-                        </div>
-                        <div class="form-actions" style="justify-content:center;">
-                            <div class="left-buttons">
-                                <button class="btn-outline" id="regBackBtn2">← Back</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+						<!-- PAGE 3: Thank You -->
+						<div class="page thanks-page" data-step="2">
+							<div class="content">
+								<h2>🎉 Thank You!</h2>
+								<p>Your profile has been set up successfully.<br>Your personalized client will be downloaded automatically.</p>
+								<button class="btn-close-modal" id="regCloseModalBtn">Close</button>
+							</div>
+							<div class="form-actions" style="justify-content:center;">
+								<div class="left-buttons">
+									<button class="btn-outline" id="regBackBtn2">← Back</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/index.js"></script>
