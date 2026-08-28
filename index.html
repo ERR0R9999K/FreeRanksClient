@@ -422,35 +422,35 @@
             
             <div class="releases-list">
 			
-                <!-- Release 4.6.2 -->
+                <!-- Release 4.7.0 -->
                 <div class="release-card">
                     <div class="release-icon">
                         <i class="fas fa-file-code"></i>
                     </div>
                     <div class="release-info">
-                        <div class="release-name">FreeRanksClient v4.6.2 Full</div>
+                        <div class="release-name">FreeRanksClient v4.7.0 Full</div>
                         <div class="release-version">Optimized Beta Release (Full version with all features. A strong device is required)</div>
-                        <div class="release-date"><i class="far fa-calendar-alt"></i> August 22, 2026</div>
+                        <div class="release-date"><i class="far fa-calendar-alt"></i> August 29, 2026</div>
                     </div>
                     <div class="release-download">
-                        <a href="#" class="release-btn" onclick="openDownloadModal('full', 'FRC v4.6.2 Full'); return false;">
+                        <a href="#" class="release-btn" onclick="openDownloadModal('assets/releases/FreeRanksClient.user.js', 'FRC v4.7.0 💎Full💎'); return false;">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
                 </div>
                 
-                <!-- Release 4.6.2 Lite -->
+                <!-- Release 4.7.0 Lite -->
                 <div class="release-card">
                     <div class="release-icon">
                         <i class="fas fa-file-code"></i>
                     </div>
                     <div class="release-info">
-                        <div class="release-name">FreeRanksClient v4.6.2 Lite</div>
+                        <div class="release-name">FreeRanksClient v4.7.0 Lite</div>
                         <div class="release-version">Beta Release (Simplified version. A weaker device is required)</div>
-                        <div class="release-date"><i class="far fa-calendar-alt"></i> August 22, 2026</div>
+                        <div class="release-date"><i class="far fa-calendar-alt"></i> August 29, 2026</div>
                     </div>
                     <div class="release-download">
-                        <a href="#" class="release-btn" onclick="openDownloadModal('lite', 'FRC v4.6.2 Lite'); return false;">
+                        <a href="#" class="release-btn" onclick="openDownloadModal('assets/releases/FreeRanksClientLite.user.js', 'FRC v4.7.0 🟢Lite🟢'); return false;">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
@@ -512,17 +512,17 @@
 					<div class="progress-bar" id="regProgressBar" style="width: 0%;"></div>
 				</div>
 				<div class="progress-text">
-					<span id="regStepLabel">Step 1 of 4</span>
-					<span class="step-indicator" id="regStepIndicator">1/4</span>
+					<span id="regStepLabel">Step 1 of 7</span>
+					<span class="step-indicator" id="regStepIndicator">1/7</span>
 				</div>
 
 				<div class="slider-wrapper">
 					<div class="pages-slider" id="regSlider">
-						<!-- PAGE 1: Welcome -->
+						<!-- ========== PAGE 0: CAPTCHA ========== -->
 						<div class="page welcome-page" data-step="0">
 							<div class="content">
 								<h2>👋 Welcome</h2>
-								<p>Create your profile in a few minutes.<br>Join our community!</p>
+								<p>Create an account or install the client.<br>Join our community!</p>
 
 								<div class="g-recaptcha" id="regRecaptchaWrapper">
 									<div class="recaptcha-checkbox" id="regRecaptchaCheckbox">
@@ -540,7 +540,7 @@
 
 								<div class="privacy-check-wrap">
 									<input type="checkbox" id="regPrivacyCheck">
-									<label for="regPrivacyCheck">I accept the <a href="privacy.html" target="_blank">Privacy Policy</a></label>
+									<label for="regPrivacyCheck">I accept the <a href="#" target="_blank">Privacy Policy</a></label>
 								</div>
 							</div>
 
@@ -552,20 +552,106 @@
 							</div>
 						</div>
 
-						<!-- PAGE 2: Profile Setup -->
-						<div class="page form-page" data-step="1">
+						<!-- ========== PAGE 1: CHOICE ========== -->
+						<div class="page choice-page" data-step="1">
 							<div class="content">
-								<h3>⚙️ Profile Setup</h3>
+								<h3><i class="fas fa-wrench"></i> Choose Action</h3>
+								<p>Install the client or register</p>
+
+								<div class="choice-buttons">
+									<button class="choice-btn" id="regInstallBtn">
+										<i class="fas fa-download" style="color: #6366f1;"></i>
+										<span>1. Install Client</span>
+										<span class="badge">recommended</span>
+									</button>
+									<button class="choice-btn" id="regRegisterBtn">
+										<i class="fas fa-user-plus" style="color: #22c55e;"></i>
+										<span>2. Register</span>
+										<span class="badge">have UUID</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="form-actions">
+								<div class="left-buttons">
+									<button class="btn-outline" id="regBackBtn1">← Back</button>
+								</div>
+								<div style="flex:1;"></div>
+							</div>
+						</div>
+
+						<!-- ========== PAGE 2: INSTALL CLIENT ========== -->
+						<div class="page install-page" data-step="2">
+							<div class="content">
+								<h3><i class="fas fa-box-open"></i> Installing Client</h3>
+								<p>Thank you for using our client!<br>After installation, you will receive a UUID for registration.</p>
+
+								<div class="spinner-container" id="regInstallSpinner">
+									<div class="spinner"></div>
+									<span class="spinner-text">Preparing installation...</span>
+								</div>
+
+								<div class="install-success" id="regInstallSuccess">
+									<i class="far fa-circle-check check-icon"></i>
+									<h4>Installation Started!</h4>
+									<p>Tampermonkey will automatically install the script.<br>After installation, reload bloxd.io</p>
+								</div>
+							</div>
+
+							<div class="form-actions">
+								<div class="left-buttons">
+									<button class="btn-outline" id="regBackBtn2">← Back</button>
+								</div>
+								<button class="btn-success" id="regInstallDoneBtn" style="display:none;">Done</button>
+							</div>
+						</div>
+
+						<!-- ========== PAGE 3: UUID INPUT ========== -->
+						<div class="page uuid-page" data-step="3">
+							<div class="content">
+								<h3>🔑 Account Login</h3>
+								
+								<div class="field-group">
+									<label for="regUuidInput">UUID (copy from client)</label>
+									<div class="uuid-input-wrapper">
+										<input type="password" id="regUuidInput" placeholder="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX">
+										<button type="button" class="uuid-toggle-btn" id="regUuidToggle" title="Show/Hide UUID">
+											<i class="fas fa-eye"></i> Show UUID
+										</button>
+									</div>
+									<small>Paste the UUID that appeared after client installation</small>
+									<div class="status-message" id="regUuidStatus"></div>
+								</div>
+
+								<div class="field-group">
+									<label for="regNicknameInput">Nickname</label>
+									<input type="text" id="regNicknameInput" placeholder="Enter your in-game nickname">
+									<small>Enter the nickname you use in the game</small>
+									<div class="status-message" id="regNicknameStatus"></div>
+								</div>
+							</div>
+
+							<div class="form-actions">
+								<div class="left-buttons">
+									<button class="btn-outline" id="regBackBtn3">← Back</button>
+								</div>
+								<button class="btn-action" id="regVerifyBtn">Verify →</button>
+							</div>
+						</div>
+
+						<!-- ========== PAGE 4: PROFILE SETUP ========== -->
+						<div class="page form-page" data-step="4">
+							<div class="content">
+								<h3>🎨 Profile Setup</h3>
 								
 								<div class="form-fields">
 									<div class="field-group">
-										<label for="regNickname">Nickname (4-21 characters)</label>
-										<input type="text" id="regNickname" placeholder="Enter your nickname" value="">
-										<small>Min 4, max 21 characters</small>
+										<label for="regNicknameDisplay">Nickname</label>
+										<input type="text" id="regNicknameDisplay" disabled placeholder="Nickname will be loaded">
 									</div>
 
 									<div class="field-group">
-										<label>Ranks (select multiple)</label>
+										<label>Ranks (select up to 4)</label>
 										<div class="custom-select-wrap" data-select="rank" data-multiple="true">
 											<div class="custom-select-trigger">
 												<span class="selected-text">Loading ranks...</span>
@@ -604,25 +690,42 @@
 
 							<div class="form-actions">
 								<div class="left-buttons">
-									<button class="btn-outline" id="regBackBtn1">← Back</button>
+									<button class="btn-outline" id="regBackBtn4">← Back</button>
 								</div>
-								<button class="btn-success" id="regNextBtn2" disabled>Next →</button>
+								<button class="btn-success" id="regNextBtn5" disabled>Complete →</button>
 							</div>
 						</div>
 
-						<!-- PAGE 3: Thank You -->
-						<div class="page thanks-page" data-step="2">
+						<!-- ========== PAGE 5: VERIFIED/OWNER STEP ========== -->
+						<div class="page verified-page" data-step="5">
+							<div class="content">
+								<div class="verified-step-content" id="verifiedStepContent">
+									<!-- Загружается динамически через JS -->
+								</div>
+							</div>
+							<div class="form-actions">
+								<div class="left-buttons">
+									<button class="btn-outline" id="regBackBtn5">← Back</button>
+								</div>
+								<button class="btn-success" id="regVerifiedNextBtn">Complete →</button>
+							</div>
+						</div>
+
+						<!-- ========== PAGE 6: THANK YOU ========== -->
+						<div class="page thanks-page" data-step="6">
 							<div class="content">
 								<h2>🎉 Thank You!</h2>
-								<p>Your profile has been set up successfully.<br>Your personalized client will be downloaded automatically.</p>
+								<p>You have successfully registered!</p>
+								<p class="sub-text">Your profile has been saved. You can now use all client features.</p>
 								<button class="btn-close-modal" id="regCloseModalBtn">Close</button>
 							</div>
 							<div class="form-actions" style="justify-content:center;">
 								<div class="left-buttons">
-									<button class="btn-outline" id="regBackBtn2">← Back</button>
+									<button class="btn-outline" id="regBackBtn6">← Back</button>
 								</div>
 							</div>
 						</div>
+						
 					</div>
 				</div>
 			</div>
