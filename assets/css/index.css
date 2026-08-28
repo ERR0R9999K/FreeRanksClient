@@ -2479,3 +2479,1593 @@ footer {
         font-size: 7px;
     }
 }
+
+/* ============ REGISTRATION MODAL STYLES ============ */
+#registration-modal .registration-modal-content {
+    max-width: 560px !important;
+    width: 92% !important;
+    padding: 25px 30px !important;
+    background: linear-gradient(145deg, #1a1a2e, #2d1b4e) !important;
+    border: 2px solid rgba(138, 43, 226, 0.3) !important;
+    border-radius: 20px !important;
+    min-height: 580px !important;
+    overflow-y: auto !important;
+    max-height: 95vh !important;
+}
+
+#registration-modal .registration-body .slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    min-height: 520px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+#registration-modal .registration-body .page {
+    flex: 0 0 100%;
+    min-height: 440px !important;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.15rem;
+}
+
+#registration-modal .registration-body .progress-wrap {
+    background: rgba(255,255,255,0.08);
+    height: 4px;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    overflow: hidden;
+}
+
+#registration-modal .registration-body .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #8a2be2, #ba55d3);
+    border-radius: 4px;
+    transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#registration-modal .registration-body .progress-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+#registration-modal .registration-body .step-indicator {
+    background: rgba(255,255,255,0.06);
+    padding: 0.15rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #e2e8f0;
+    font-size: 0.65rem;
+}
+
+#registration-modal .registration-body .pages-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    width: 100%;
+    flex: 1;
+}
+
+/* Welcome Page */
+#registration-modal .registration-body .welcome-page {
+    text-align: center;
+    padding: 0.3rem 0.15rem;
+}
+
+#registration-modal .registration-body .welcome-page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#registration-modal .registration-body .welcome-page h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    margin-bottom: 0.3rem;
+}
+
+#registration-modal .registration-body .welcome-page p {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+/* Choice Page */
+#registration-modal .choice-page {
+    text-align: center;
+    padding: 0.3rem 0.15rem;
+}
+
+#registration-modal .choice-page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+#registration-modal .choice-page h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin-bottom: 0.2rem;
+}
+
+#registration-modal .choice-page p {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    line-height: 1.4;
+}
+
+#registration-modal .choice-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.3rem 0;
+}
+
+#registration-modal .choice-btn {
+    padding: 0.8rem 1.2rem;
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    background: rgba(255,255,255,0.04);
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+#registration-modal .choice-btn:hover {
+    border-color: #8a2be2;
+    background: rgba(138, 43, 226, 0.1);
+    transform: scale(1.02);
+}
+
+#registration-modal .choice-btn i {
+    font-size: 1.2rem;
+}
+
+#registration-modal .choice-btn .badge {
+    background: rgba(255,255,255,0.08);
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #a0a0a0;
+}
+
+/* Install Page */
+#registration-modal .install-page {
+    text-align: center;
+    padding: 0.3rem 0.15rem;
+}
+
+#registration-modal .install-page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#registration-modal .install-page h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+#registration-modal .install-page p {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    line-height: 1.5;
+    max-width: 400px;
+}
+
+#registration-modal .spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.3rem 0;
+}
+
+#registration-modal .spinner-container .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255,255,255,0.1);
+    border-top-color: #8a2be2;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+}
+
+#registration-modal .spinner-container .spinner-text {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+#registration-modal .install-success {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#registration-modal .install-success .check-icon {
+    font-size: 3.5rem;
+    color: #22c55e;
+}
+
+#registration-modal .install-success h4 {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+#registration-modal .install-success p {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    max-width: 320px;
+}
+
+/* UUID Page */
+#registration-modal .uuid-page {
+    padding: 0.15rem 0;
+}
+
+#registration-modal .uuid-page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#registration-modal .uuid-page h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin-bottom: 0.8rem;
+}
+
+#registration-modal .uuid-page .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.6rem;
+}
+
+#registration-modal .uuid-page .field-group label {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #c0c0c0;
+    margin-left: 0.2rem;
+}
+
+#registration-modal .uuid-page .field-group input {
+    background: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+    transition: 0.2s;
+    outline: none;
+    font-family: inherit;
+    width: 100%;
+    height: 38px;
+}
+
+#registration-modal .uuid-page .field-group input:focus {
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.15);
+}
+
+#registration-modal .uuid-page .field-group input.error {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+#registration-modal .uuid-page .field-group input.success {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+#registration-modal .uuid-page .field-group small {
+    font-size: 0.7rem;
+    color: #6a7a8a;
+    margin-left: 0.2rem;
+}
+
+#registration-modal .uuid-page .field-group .status-message {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    display: none;
+}
+
+#registration-modal .uuid-page .field-group .status-message.error {
+    display: block;
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.08);
+}
+
+#registration-modal .uuid-page .field-group .status-message.success {
+    display: block;
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.08);
+}
+
+/* Form Page */
+#registration-modal .form-page {
+    padding: 0.15rem 0;
+}
+
+#registration-modal .form-page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#registration-modal .form-page h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin-bottom: 0.8rem;
+}
+
+#registration-modal .form-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#registration-modal .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#registration-modal .field-group label {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #c0c0c0;
+    margin-left: 0.2rem;
+}
+
+#registration-modal .field-group input[type="text"] {
+    background: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+    transition: 0.2s;
+    outline: none;
+    font-family: inherit;
+    width: 100%;
+    height: 38px;
+}
+
+#registration-modal .field-group input[type="text"]:focus {
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.15);
+}
+
+#registration-modal .field-group input[type="text"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#registration-modal .field-group small {
+    font-size: 0.65rem;
+    color: #6a7a8a;
+    margin-left: 0.2rem;
+}
+
+/* Custom Select in Registration */
+#registration-modal .custom-select-wrap {
+    position: relative;
+    width: 100%;
+}
+
+#registration-modal .custom-select-trigger {
+    background: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+    user-select: none;
+    min-height: 38px;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    color: #e0e0e0;
+}
+
+#registration-modal .custom-select-trigger:hover {
+    border-color: rgba(255,255,255,0.2);
+}
+
+#registration-modal .custom-select-trigger.open {
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.15);
+}
+
+#registration-modal .custom-select-trigger .arrow {
+    transition: transform 0.2s;
+    font-size: 0.6rem;
+    color: #94a3b8;
+    margin-left: auto;
+}
+
+#registration-modal .custom-select-trigger.open .arrow {
+    transform: rotate(180deg);
+}
+
+#registration-modal .custom-options {
+    position: absolute;
+    top: calc(100% + 3px);
+    left: 0;
+    right: 0;
+    background: #1a1a2e;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    max-height: 180px;
+    overflow-y: auto;
+    z-index: 10000;
+    display: none;
+    padding: 0.2rem 0;
+    margin: 0;
+    box-shadow: 0 10px 30px -8px rgba(0,0,0,0.5);
+}
+
+#registration-modal .custom-options.open {
+    display: block;
+}
+
+#registration-modal .custom-option {
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    transition: 0.15s;
+    font-size: 0.8rem;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#registration-modal .custom-option:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+#registration-modal .custom-option.selected {
+    background: rgba(138, 43, 226, 0.2);
+    color: #ba55d3;
+}
+
+#registration-modal .custom-option.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#registration-modal .custom-option.disabled:hover {
+    background: transparent;
+}
+
+#registration-modal .rank-preview {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 12px;
+}
+
+#registration-modal .rank-chat-preview {
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+}
+
+#registration-modal .color-preview {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.1);
+    flex-shrink: 0;
+}
+
+#registration-modal .color-preview.custom-color {
+    animation: rainbowShimmer 3s linear infinite;
+    background: linear-gradient(90deg, #ff6b9d, #ffa64d, gold, #7dd87d, #6bb5ff, #c084fc, #ff6b9d);
+    background-size: 400% 400%;
+}
+
+#registration-modal .cape-preview {
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid rgba(255,255,255,0.1);
+    flex-shrink: 0;
+    object-fit: cover;
+    background: rgba(255,255,255,0.03);
+    image-rendering: pixelated;
+    max-width: 28px;
+}
+
+#registration-modal .selected-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    background: rgba(138, 43, 226, 0.2);
+    padding: 0.05rem 0.4rem;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    color: #ba55d3;
+}
+
+#registration-modal .selected-tag .remove-tag {
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 0.05rem;
+    color: #94a3b8;
+}
+
+#registration-modal .selected-tag .remove-tag:hover {
+    color: #ef4444;
+}
+
+#registration-modal .rank-counter {
+    font-size: 0.6rem;
+    color: #94a3b8;
+    margin-left: 4px;
+    padding: 0 6px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+#registration-modal .rank-counter.full {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+#registration-modal .hidden-color-picker {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Form Actions */
+#registration-modal .registration-body .form-actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+    gap: 0.6rem;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+#registration-modal .registration-body .form-actions .left-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#registration-modal .registration-body .btn-outline {
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,0.15);
+    color: #c0c0c0;
+    font-weight: 600;
+    padding: 0.35rem 1.4rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    min-width: 80px;
+    height: 36px;
+}
+
+#registration-modal .registration-body .btn-outline:hover:not(:disabled) {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.25);
+}
+
+#registration-modal .registration-body .btn-outline:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#registration-modal .registration-body .btn-primary,
+#registration-modal .registration-body .btn-success,
+#registration-modal .registration-body .btn-action {
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.35rem 1.8rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.8rem;
+    min-width: 100px;
+    height: 36px;
+}
+
+#registration-modal .registration-body .btn-primary {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+    box-shadow: 0 4px 12px -4px rgba(138, 43, 226, 0.3);
+}
+
+#registration-modal .registration-body .btn-primary:hover:not(:disabled) {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px -4px rgba(138, 43, 226, 0.5);
+}
+
+#registration-modal .registration-body .btn-primary:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#registration-modal .registration-body .btn-success {
+    background: linear-gradient(135deg, #44ff44, #00cc00);
+    color: #0a0a0a;
+    box-shadow: 0 4px 12px -4px rgba(68, 255, 68, 0.2);
+}
+
+#registration-modal .registration-body .btn-success:hover:not(:disabled) {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px -4px rgba(68, 255, 68, 0.4);
+}
+
+#registration-modal .registration-body .btn-success:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#registration-modal .registration-body .btn-action {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    box-shadow: 0 4px 12px -4px rgba(99, 102, 241, 0.3);
+}
+
+#registration-modal .registration-body .btn-action:hover:not(:disabled) {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px -4px rgba(99, 102, 241, 0.5);
+}
+
+#registration-modal .registration-body .btn-action:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#registration-modal .registration-body .btn-close-modal {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.6rem 2.2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 6px 16px -6px rgba(138, 43, 226, 0.3);
+}
+
+#registration-modal .registration-body .btn-close-modal:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px -6px rgba(138, 43, 226, 0.5);
+}
+
+/* Thanks Page */
+#registration-modal .thanks-page {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#registration-modal .thanks-page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registration-modal .thanks-page h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #f0f0f0;
+}
+
+#registration-modal .thanks-page p {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 0.3rem;
+}
+
+#registration-modal .thanks-page .sub-text {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 1.2rem;
+}
+
+/* reCAPTCHA */
+#regRecaptchaWrapper {
+    width: 280px;
+    height: 60px;
+    background: white;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    box-sizing: border-box;
+    margin: 0 auto 0.6rem;
+}
+
+#regRecaptchaCheckbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    height: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+
+#regRecaptchaCheckbox .checkbox-container {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #dadce0;
+    border-radius: 3px;
+    background: white;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+#regRecaptchaCheckbox.checked .checkbox-container {
+    background: #0f9d58;
+    border-color: #0f9d58;
+}
+
+#regRecaptchaCheckbox.loading .checkbox-container {
+    opacity: 0;
+}
+
+#regRecaptchaCheckbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+#regRecaptchaCheckbox.checked .checkmark {
+    animation: regCheckmark 0.3s ease-out forwards;
+}
+
+#regRecaptchaCheckbox .loading-spinner {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(66, 133, 244, 0.2);
+    border-top-color: #4285f4;
+    border-radius: 50%;
+    animation: regLoading 1s linear infinite;
+    display: none;
+    transform: translateY(-50%);
+}
+
+#regRecaptchaCheckbox.loading .loading-spinner {
+    display: block;
+}
+
+#regRecaptchaCheckbox .checkbox-label {
+    font-size: 12px;
+    color: #70757a;
+    font-weight: 400;
+}
+
+#registration-modal .recaptcha-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+#registration-modal .recaptcha-logo-icon {
+    width: 20px;
+    height: 20px;
+    background: url('https://www.gstatic.com/images/icons/material/product/2x/recaptcha_48dp.png') no-repeat center;
+    background-size: contain;
+}
+
+#registration-modal .recaptcha-logo-text {
+    font-size: 8px;
+    color: #70757a;
+    margin-top: 1px;
+    font-weight: 500;
+}
+
+#registration-modal .privacy-check-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    justify-content: center;
+    margin: 0.4rem 0 0.1rem;
+    font-size: 0.8rem;
+    color: #c0c0c0;
+}
+
+#registration-modal .privacy-check-wrap input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #8a2be2;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+#registration-modal .privacy-check-wrap a {
+    color: #ba55d3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#registration-modal .privacy-check-wrap a:hover {
+    text-decoration: underline;
+}
+
+#registration-modal .loading-text {
+    color: #94a3b8;
+    font-size: 0.75rem;
+    padding: 0.3rem 1rem;
+    text-align: center;
+}
+
+#registration-modal .error-text {
+    color: #ef4444;
+    font-size: 0.75rem;
+    padding: 0.3rem 1rem;
+    text-align: center;
+}
+
+@keyframes regCheckmark {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    80% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+@keyframes regLoading {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Registration Toast */
+.registration-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 28px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    font-size: 0.95rem;
+    font-weight: 500;
+    z-index: 100001;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    animation: toastSlideUp 0.3s ease-out;
+    max-width: 90%;
+    text-align: center;
+}
+
+.registration-toast.info {
+    background: rgba(10, 10, 40, 0.95);
+    color: #ba55d3;
+    border: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.registration-toast.error {
+    background: rgba(40, 10, 10, 0.95);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 68, 68, 0.3);
+}
+
+.registration-toast.success {
+    background: rgba(10, 40, 10, 0.95);
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+@keyframes toastSlideUp {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes toastSlideDown {
+    0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #registration-modal .registration-modal-content {
+        padding: 16px !important;
+        width: 96% !important;
+        max-height: 98vh !important;
+        min-height: 500px !important;
+    }
+    
+    #registration-modal .registration-body .slider-wrapper {
+        min-height: 420px;
+    }
+    
+    #registration-modal .registration-body .page {
+        min-height: 360px;
+    }
+    
+    #registration-modal .registration-body .welcome-page h2 {
+        font-size: 1.4rem;
+    }
+    
+    #registration-modal .registration-body .form-page h3,
+    #registration-modal .uuid-page h3,
+    #registration-modal .choice-page h3,
+    #registration-modal .install-page h3 {
+        font-size: 1.2rem;
+    }
+    
+    #registration-modal .registration-body .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.4rem;
+    }
+    
+    #registration-modal .registration-body .form-actions .left-buttons {
+        flex-direction: column;
+    }
+    
+    #regRecaptchaWrapper {
+        width: 100%;
+        max-width: 260px;
+        height: 54px;
+        padding: 0 10px;
+    }
+    
+    #regRecaptchaCheckbox .checkbox-label {
+        font-size: 11px;
+    }
+    
+    #registration-modal .registration-body .btn-outline,
+    #registration-modal .registration-body .btn-primary,
+    #registration-modal .registration-body .btn-success,
+    #registration-modal .registration-body .btn-action {
+        min-width: unset;
+        width: 100%;
+        height: 34px;
+        font-size: 0.75rem;
+        padding: 0.25rem 1.2rem;
+    }
+    
+    #registration-modal .field-group input[type="text"] {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        height: 34px;
+    }
+    
+    #registration-modal .field-group label {
+        font-size: 0.7rem;
+    }
+    
+    #registration-modal .custom-select-trigger {
+        min-height: 34px;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    #registration-modal .custom-options {
+        max-height: 150px;
+    }
+    
+    #registration-modal .custom-option {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+    
+    #registration-modal .thanks-page h2 {
+        font-size: 1.6rem;
+    }
+    
+    #registration-modal .registration-body .btn-close-modal {
+        font-size: 0.85rem;
+        padding: 0.5rem 1.8rem;
+    }
+    
+    #registration-modal .privacy-check-wrap {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #registration-modal .registration-modal-content {
+        padding: 12px !important;
+    }
+    
+    #registration-modal .registration-body .slider-wrapper {
+        min-height: 380px;
+    }
+    
+    #registration-modal .registration-body .page {
+        min-height: 330px;
+    }
+    
+    #regRecaptchaWrapper {
+        max-width: 220px;
+        height: 48px;
+        padding: 0 8px;
+    }
+    
+    #regRecaptchaCheckbox .checkbox-container {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+    }
+    
+    #regRecaptchaCheckbox .checkmark {
+        font-size: 11px;
+    }
+    
+    #regRecaptchaCheckbox .checkbox-label {
+        font-size: 10px;
+    }
+    
+    #registration-modal .recaptcha-logo-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    #registration-modal .recaptcha-logo-text {
+        font-size: 7px;
+    }
+}
+
+/* UUID Input with Toggle Button */
+.uuid-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.uuid-input-wrapper input[type="password"],
+.uuid-input-wrapper input[type="text"] {
+    width: 100%;
+    padding-right: 45px;
+    background: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+    transition: 0.2s;
+    outline: none;
+    font-family: inherit;
+    height: 38px;
+}
+
+.uuid-input-wrapper input[type="password"]:focus,
+.uuid-input-wrapper input[type="text"]:focus {
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.15);
+}
+
+.uuid-toggle-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 120px;
+}
+
+.uuid-toggle-btn:hover {
+    color: #e2e8f0;
+}
+
+.uuid-toggle-btn:active {
+    color: #8a2be2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .uuid-input-wrapper input[type="password"],
+    .uuid-input-wrapper input[type="text"] {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        height: 34px;
+        padding-right: 40px;
+    }
+    
+    .uuid-toggle-btn {
+        right: 10px;
+        font-size: 0.8rem;
+        padding: 4px 6px;
+    }
+}
+
+/* ===== VERIFIED STEP (ШАГ 5) ===== */
+#registration-modal .verified-page {
+    padding: 0.3rem 0.15rem;
+}
+
+#registration-modal .verified-page .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+#registration-modal .verified-step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#registration-modal .verified-step-icon {
+    background: rgba(19, 96, 200, 0.1);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgba(19, 96, 200, 0.3);
+    margin-bottom: 0.3rem;
+    animation: verifiedPulse 2s ease-in-out infinite;
+}
+
+#registration-modal .verified-step-icon i {
+    font-size: 2.5rem;
+}
+
+@keyframes verifiedPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(19, 96, 200, 0.1); }
+    50% { transform: scale(1.05); box-shadow: 0 0 40px rgba(19, 96, 200, 0.2); }
+}
+
+#registration-modal .verified-page .verified-step-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+#registration-modal .verified-page .verified-step-content p {
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#registration-modal .verified-page .verified-step-content .verified-info-box {
+    background: rgba(19, 96, 200, 0.08);
+    border: 2px solid rgba(19, 96, 200, 0.2);
+    border-radius: 12px;
+    padding: 15px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    transition: all 0.3s ease;
+}
+
+#registration-modal .verified-page .verified-step-content .verified-info-box:hover {
+    border-color: rgba(19, 96, 200, 0.4);
+    box-shadow: 0 4px 20px rgba(19, 96, 200, 0.1);
+}
+
+#registration-modal .verified-page .verified-step-content .verified-info-box p {
+    color: #d0d0d0;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#registration-modal .verified-page .verified-step-content .verified-info-box i {
+    color: #1360c8;
+    margin-right: 8px;
+}
+
+/* Owner стиль */
+#registration-modal .verified-page.owner-step .verified-step-icon {
+    border-color: rgba(255, 185, 20, 0.3);
+    background: rgba(255, 185, 20, 0.1);
+}
+
+#registration-modal .verified-page.owner-step .verified-info-box {
+    border-color: rgba(255, 185, 20, 0.2);
+    background: rgba(255, 185, 20, 0.05);
+}
+
+#registration-modal .verified-page.owner-step .verified-info-box:hover {
+    border-color: rgba(255, 185, 20, 0.4);
+}
+
+#registration-modal .verified-page.owner-step .verified-info-box i {
+    color: #ffb914;
+}
+
+@keyframes verifiedPulseOwner {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(255, 185, 20, 0.1); }
+    50% { transform: scale(1.05); box-shadow: 0 0 40px rgba(255, 185, 20, 0.2); }
+}
+
+#registration-modal .verified-page.owner-step .verified-step-icon {
+    animation: verifiedPulseOwner 2s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #registration-modal .verified-step-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    #registration-modal .verified-step-icon i {
+        font-size: 2rem;
+    }
+    
+    #registration-modal .verified-page .verified-step-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    #registration-modal .verified-page .verified-step-content .verified-info-box {
+        padding: 12px 15px;
+    }
+    
+    #registration-modal .verified-page .verified-step-content .verified-info-box p {
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== NAMETAG CUSTOMIZATION ===== */
+.nametag-customization {
+    padding: 0.2rem 0;
+}
+
+.nametag-customization .greeting {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    background: rgba(138, 43, 226, 0.08);
+    border-radius: 8px;
+    border: 1px solid rgba(138, 43, 226, 0.1);
+}
+
+.nametag-customization .greeting strong {
+    color: #ba55d3;
+}
+
+.nametag-section {
+    margin-bottom: 12px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.nametag-section.disabled {
+    opacity: 0.4;
+    border-color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.nametag-section .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nametag-section .section-header .label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #c0c0c0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nametag-section .section-header .label i {
+    font-size: 0.7rem;
+    color: #8a2be2;
+}
+
+/* Toggle Switch (маленький) */
+.nametag-toggle {
+    position: relative;
+    width: 34px;
+    height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.nametag-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.nametag-toggle .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.nametag-toggle .slider::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 3px;
+    bottom: 3px;
+    background: #888;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.nametag-toggle input:checked + .slider {
+    background: #8a2be2;
+}
+
+.nametag-toggle input:checked + .slider::before {
+    transform: translateX(16px);
+    background: white;
+}
+
+.nametag-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nametag-row .field {
+    flex: 1;
+    min-width: 100px;
+}
+
+.nametag-row .field label {
+    display: block;
+    font-size: 0.6rem;
+    color: #94a3b8;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nametag-row .field input[type="color"] {
+    width: 100%;
+    height: 32px;
+    padding: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    outline: none;
+}
+
+.nametag-row .field input[type="color"]:focus {
+    border-color: #8a2be2;
+}
+
+.nametag-row .field input[type="range"] {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(138, 43, 226, 0.3);
+    border-radius: 2px;
+    outline: none;
+}
+
+.nametag-row .field input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #8a2be2;
+    cursor: pointer;
+}
+
+.nametag-row .field input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #8a2be2;
+    cursor: pointer;
+    border: none;
+}
+
+.nametag-row .field .range-value {
+    font-size: 0.7rem;
+    color: #c0c0c0;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.nametag-select {
+    width: 100%;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-size: 0.75rem;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+.nametag-select:focus {
+    border-color: #8a2be2;
+}
+
+.nametag-select option {
+    background: #1a1a2e;
+    color: #e0e0e0;
+}
+
+/* Разделитель */
+.nametag-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.3), transparent);
+    margin: 14px 0;
+}
+
+/* Preview */
+.nametag-preview-wrap {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.NameTagPreview {
+    background: #22283b;
+    width: max-content;
+    font-family: "JetBrains Mono", monospace;
+    transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.NameTagPreview .Content {
+    display: flex;
+    align-items: center;
+}
+
+.NameTagPreview .Nickname {
+	margin: 0 5px;
+}
+
+.NameTagPreview .Nickname,
+.NameTagPreview .Subtitle {
+    font-family: "JetBrains Mono", monospace;
+    text-shadow: -2px -2px 0 #000, -2px 0 0 #000, -2px 2px 0 #000, 0 -2px 0 #000, 0 0 0 #000, 0 2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 2px 2px 0 #000;
+    color: #dff8ff;
+    transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.NameTagPreview .Subtitle {
+    text-align: center;
+    background: #1a1e2d;
+    padding: 2px 8px;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.NameTagPreview.SolidBorder {
+    border-style: solid;
+    transition: border-color 0.3s ease, border-width 0.3s ease;
+}
+
+.NameTagPreview.GlowBorder {
+    transition: box-shadow 0.3s ease;
+}
+
+.NameTagPreview .Ranks {
+    width: auto;
+    display: flex;
+}
+
+.NameTagPreview .Ranks .PreviewRank {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NameTagPreview .Ranks .PreviewRank i,
+.NameTagPreview .Ranks .PreviewRank svg {
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .nametag-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .nametag-row .field {
+        min-width: unset;
+        width: 100%;
+    }
+    
+    .nametag-section {
+        padding: 10px 12px;
+    }
+    
+    .NameTagPreview .Nickname {
+        font-size: 0.85rem;
+    }
+    
+    .NameTagPreview .Ranks .PreviewRank {
+        padding: 4px 6px;
+    }
+}
+
+.nametag-section-body {
+    transition: opacity 0.3s ease;
+}
